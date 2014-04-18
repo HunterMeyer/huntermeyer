@@ -7,8 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id='banner'>
+    <p id='banner-text'><span class='small-letter'>H</span>unter <span class='small-letter'>M</span>eyer</p>
+  </div>
+  
+  <div id='banner-links'>
+    <a href='index.html' class='links'>Home</a>
+    <a href='about.html' class='links'>About</a>
+    <a href='projects.html' class='links'>Projects</a>
+    <a href='contact.html' class='links'>Contact</a>
+  </div>
 
-<%= yield %>
-
+  <div id='middle-banner'>
+    <img src='img/me.jpg' class='img-square' id='me-pic'>
+  </div>
+  
+  <div id='phrase-banner'>
+    <span class='big-phrase'>Web Engineer</span>
+  </div> 
+  
+  <%= yield %>
 </body>
 </html>
