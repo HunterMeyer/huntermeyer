@@ -1,1 +1,491 @@
 @import "bootstrap";
+
+/* Universal */
+html {
+  font-size: 100%;
+}
+
+body {
+  background: url('grain.png');
+  line-height: 37px;
+}
+
+/* Icons */
+.icon-ok {
+  margin-top: 8px;
+}
+
+.icon-align-justify {
+  margin-top: 8px;
+}
+
+/* Responify Fonts, Containers, Pics etc. */
+@media (max-width: 327px) { 
+  #banner-text   { font-size: 1.8rem; } 
+  #banner        { height:    2.2rem; } 
+  #middle-banner { height:      9rem; padding-top: 3.5%; } 
+  #me-pic        { height:      8rem; }
+  .card          { width:        80%; margin-left: 10%; }
+  button.read    { font-size:   150%; }
+  #banner-links  { font-size: 1.5rem; }
+} /* Mobile device portrait 320px x 480px */
+
+@media (min-width: 328px) {
+  #banner-text   { font-size: 2.8rem; line-height: 30px; } 
+  .small-letter  { font-size:   2rem; }
+  #banner        { height:      3rem; } 
+  #middle-banner { height:     11rem; padding-top: 2.5%; }
+  #me-pic        { height:     10rem; }
+  .card          { width:        80%; margin-left: 10%; }
+  #cards         { width:        80%; }
+  button.read    { font-size:   150%; }
+  #banner-links  { font-size: 1.5rem; }
+} /* Mobile devices between 320px-480px */
+
+@media (min-width: 480px) { 
+  #banner-text   { font-size: 2.8rem; line-height: 38px; } 
+  .small-letter  { font-size: 2.3rem; }
+  #banner        { height:      3rem; } 
+  #middle-banner { height:     13rem; padding-top: 1.5%; } 
+  #me-pic        { height:     12rem; }
+  .card          { width:        44%; margin-left: 4%; }
+  button.read    { font-size:   130%; }
+  #banner-links  { font-size:   2rem; }
+} /* Mobile device landscape 480px x 320px */
+
+@media (min-width: 640px) { 
+  #banner-text   { font-size: 3.5rem; line-height: 50px; } 
+  .small-letter  { font-size:   3rem; }
+  #banner        { height:    3.8rem; } 
+  #middle-banner { height:     16rem; padding-top: 1.5%; } 
+  #me-pic        { height:     15rem; }
+  .card          { width:        44%; margin-left: 4%; }
+  #cards         { width:        80%; }
+  button.read    { font-size:   160%; }
+  #banner-links  { font-size:   2rem; }
+} /* Mobile device portrait 640px x 960px */
+
+@media (min-width: 758px) { 
+  #banner-text   { font-size: 4.2rem; line-height: 60px; }
+  .small-letter  { font-size: 3.2rem; }
+  #banner        { height:    4.6rem; } 
+  #middle-banner { height:     16rem; padding-top: 1%; }
+  #me-pic        { height:     15rem; } 
+  .card          { width:        28%; margin-left: 4%; }
+  #cards         { width:        85%; }
+  button.read    { font-size:   140%; }
+  #banner-links  { font-size:   2rem; }
+} /* Mobile device landscape 800px x 480px */
+
+@media (min-width: 960px) { 
+  #banner-text   { font-size:   5rem; line-height: 66px; }
+  .small-letter  { font-size:   4rem; }
+  #banner        { height:    5.4rem; } 
+  #middle-banner { height:     17rem; padding-top: 1%; }
+  #me-pic        { height:     16rem; }
+  .card          { width:      22.5%; margin-left: 2%; }
+  button.read    { font-size:   140%; }
+  #banner-links  { font-size:   2rem; }
+} /* Devices larger than 960px x 640px */
+
+@media (min-width: 1024px) { 
+  #banner-text   { font-size:   6rem; line-height: 82px; } 
+  .small-letter  { font-size:   5rem; }
+  #banner        { height:    6.4rem; } 
+  #middle-banner { height:     18rem; padding-top: 0.75%; }
+  #me-pic        { height:     17rem; }
+  .card          { width:      22.5%; margin-left: 2%; }
+  #cards         { width:        80%; }
+  #banner-links  { font-size:   2rem; }
+} /* Devices larger than 1024px */
+
+/* The Hunter Meyer Banner and Logo */
+#banner {
+  width: 100%;
+  background-color: #303030;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+#banner-text {
+  font-family: 'Poiret One', cursive;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* The Links */
+#banner-links {
+  width: 100%;
+  text-align: center;
+  background-color: #66AC7C;
+}
+
+.links {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  padding: 0 10px 0 10px;
+}
+
+.links:hover, .links:focus {
+  background-color: #3D8152;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+/* The Picture Banner and Image */
+#middle-banner {
+  width: 100%;
+  background: url('mochaGrunge.png');
+  box-shadow: inset 0 2px 4px #686868;
+  border-bottom: 1px solid #FFF;
+}
+
+#me-pic {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  box-shadow: 0 6px 2px -2px #686868;
+}
+
+/* The Phrase Under My Picture */
+#phrase-banner {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -10px;
+  border-radius: 2px;
+  background-color: #DBB879;
+  border-bottom: 2px solid #AF925E;
+  color: #333333;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+}
+
+.big-phrase {
+  display: block;
+  font-size: 30px;
+  padding: 5px;
+}
+
+/* The Cards Displaying Information */
+#cards {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.card {
+  display: block;
+}
+
+.thumbnail {
+  background-color: #FFF;
+  border-bottom: 2px solid #999999;
+}
+
+.thumbnail:hover {
+/*  background-color: #E7E7E7;
+  border-bottom: 4px solid #BDBDBD;*/
+}
+
+.thumb {
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+button.read {
+  width: 96%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 2%;
+  background-color: #66AC7C; 
+  border: none;
+  border-bottom: 4px solid #457754;
+  border-radius: 8px;
+  color: #FFF;
+}
+
+button.read:hover, .read:focus {
+  height: 48px;
+  margin-top: 12px;
+  background-color: #7ACA93;
+  border-bottom: 2px solid #519967;
+  text-decoration: none;
+  outline: none;
+}
+
+button.read:active {
+  height: 48px;
+  background-color: #66AC7C;
+  margin-top: 12px;
+  border-top: 2px solid #457754;
+  border-bottom: none;
+}
+
+li {
+  margin-bottom: 4%;
+  border: none;
+  float: left;
+}
+
+/* Resume Button */
+.resume-button {
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: #66AC7C; 
+  border: none;
+  border-bottom: 4px solid #457754;
+  border-radius: 8px;
+}
+
+.resume-button:hover, .resume-button a:focus {
+  margin-top: 22px;
+  background-color: #7ACA93;
+  border-bottom: 2px solid #457754;
+  text-decoration: none;
+  outline: none;
+}
+
+.resume-button:active {
+  margin-top: 22px;
+  background-color: #66AC7C;
+  border-top: 2px solid #457754;
+  border-bottom: none;
+}
+
+.resume-button a {
+  display: block;
+  width: 180px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 48px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.resume-button a:hover, .resume-button a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* About Cards */
+.about-card {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+
+span.info-header {
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 5px;
+  color: #66AC7C;
+  font-size: 42px;
+  font-weight: bolder;
+  font-family: 'Poiret One', cursive;
+}
+
+p.information {
+  padding: 10px 0 0 10px;
+  line-height: 26px;
+  color: #333333;
+  font-size: 22px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+
+/* Projects Cards */
+#move-footer {
+  margin-bottom: 400px;
+}
+
+.demo-button {
+  width: 96%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: #66AC7C; 
+  border: none;
+  border-bottom: 4px solid #457754;
+  border-radius: 6px;
+}
+
+.demo-button:hover, .demo-button a:focus {
+  margin-top: 7px;
+  background-color: #7ACA93;
+  border-bottom: 2px solid #457754;
+  text-decoration: none;
+  outline: none;
+}
+
+.demo-button:active {
+  margin-top: 7px;
+  background-color: #66AC7C;
+  border-top: 2px solid #457754;
+  border-bottom: none;
+}
+
+.demo-button a {
+  display: block;
+  width: 96%;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 39px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.demo-button a:hover, .demo-button a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.code-button {
+  width: 96%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: rgb(80, 162, 189); 
+  border: none;
+  border-bottom: 4px solid rgb(63, 119, 138);
+  border-radius: 6px;
+}
+
+.code-button:hover, .code-button a:focus {
+  margin-top: 7px;
+  background-color: rgb(101, 191, 221);
+  border-bottom: 2px solid rgb(63, 119, 138);
+  text-decoration: none;
+  outline: none;
+}
+
+.code-button:active {
+  margin-top: 7px;
+  background-color: rgb(80, 162, 189);
+  border-top: 2px solid rgb(63, 119, 138);
+  border-bottom: none;
+}
+
+.code-button a {
+  display: block;
+  width: 96%;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 39px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+.code-button a:hover, .code-button a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  height: 100px;
+  background: url('dark.png');
+  text-align: center; 
+}
+
+#follow-banner {
+  position: relative;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: -20px;
+  z-index: 1000;
+  border-radius: 2px;
+  background-color: #DBB879;
+  border-bottom: 2px solid #AF925E;
+  color: #333333;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+}
+
+.follow-me {
+  display: block;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.social {
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.social a:hover, .social a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.social-icon {
+  width: 40px;
+  border: none;
+}
+
+#footer-text {
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #686868;
+}
+
+/* Modal */
+.modal-header {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.modal-body {
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #FFF;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.more-info {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  color: #686868;
+}
+
+.more-detail {
+  display: block;
+  padding: 15px 5px 20px 5px;
+  background: url('mochaGrunge.png');
+  color: white;
+  text-shadow: 0px 1px 5px #353535;
+  box-shadow: inset 0 0px 6px #686869;
+
+}
+
+.technologies {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  background-color: #DBB879;
+  border-bottom: 2px solid #AF925E;
+  border-radius: 2px;
+  color: #333333;
+  font-family: 'Poiret One', cursive;
+  font-size: 28px;
+}
+
+.technology {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
