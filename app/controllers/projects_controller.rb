@@ -16,6 +16,34 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def triangle
+    render layout: false
+  end
+
+  def pig_latin
+    render layout: false
+  end
+
+  def youtv
+    render layout: false
+  end
+
+  def todo
+    render layout: false
+  end
+
+  def legislator
+    render layout: false
+  end
+
+  def creditcard
+    render layout: 'creditcard'
+  end
+
+  def music_search
+    render layout: false
+  end
+
   private
 
   def project_params
