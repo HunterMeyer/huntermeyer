@@ -1,6 +1,6 @@
 Huntermeyer::Application.routes.draw do
-  resources :contacts
-  resources :projects, except: :show
+  resources :contacts, except: [ :index, :show, :edit, :update, :destroy ]
+  resources :projects, except: [ :show, :edit, :update, :destroy ]
 
   root 'static_pages#index'
 
