@@ -30,6 +30,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    awesome_print (1.2.0)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -138,6 +139,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeresource
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-glyphicons
