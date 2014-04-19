@@ -9,10 +9,11 @@
       <div class='thumbnail' id='move-footer'>
         <p class='information info-header'>
           <span class='info-header'>Get in Touch</span>
-          <%= form_for @contact, html: { class: 'form-horizontal'} do |f| %>
-            <%= f.text_field :email, class: 'span9', placeholder: 'example@email.com' %>
-            <%= f.text_area  :content, rows: 2, class: 'span9', placeholder: "What's on your mind?" %>
-            <%= f.submit 'Send', class: 'btn btn-primary' %>
+          <%= form_for @contact, html: { class: 'contact-form'} do |f| %>
+            <span class='tiny-info'>Email and message required.</span>
+            <%= f.text_field :email, class: 'contact-input', placeholder: 'example@email.com' %>
+            <%= f.text_area  :content, rows: 3, class: 'contact-input', placeholder: "What's on your mind?" %>
+            <%= f.submit 'Send', class: 'submit-button' %>
           <% end %>
         </p>
       </div>
