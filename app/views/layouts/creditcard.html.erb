@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Credit Card Check</title>
+  <%= stylesheet_link_tag    'application',        media: 'all' %>
+  <%= stylesheet_link_tag    'creditcard.css.css', media: 'all' %>
+  <%= javascript_include_tag 'jquery-1.10.2.js' %>
+  <%= javascript_include_tag 'creditcard.js' %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Kameron|Varela' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class='container'>
+    <%= yield %>
+  </div>
+</body>
+</html>

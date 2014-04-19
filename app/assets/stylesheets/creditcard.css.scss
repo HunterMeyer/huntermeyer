@@ -1,0 +1,84 @@
+body { 
+  background: url('textured-background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  color: #ecf0f1;
+  font-family: 'Varela', sans-serif;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+h3 {
+  color: #7f8c8d;
+  font-family: 'Varela', sans-serif;
+  margin: 28px 25px 0 0;
+  font-size: 140%
+}
+
+.container {
+  text-align: center;
+}
+
+#account-wrapper {
+  margin: 200px auto 0 auto;
+  width: 300px;
+  height: 185px;
+  border-radius: 10px;
+  background: url('card.png') no-repeat;
+  background-size: cover;
+  box-shadow: 0 9px 6px -4px black;
+  text-align: center;
+}
+
+#piggy {
+  float: left;
+  width: 60px;
+  margin-left: 10px
+}
+
+#user-input {
+  font-family: 'Kameron', serif;
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: 258px;
+  height: 25px;
+  border: none;
+  box-shadow: inset 0px 1px 2px black;
+  text-align: center;
+  margin-top: 40px;
+  color: #f39c12;
+}
+
+#account-wrapper p {
+  font-family: 'Kameron', serif;
+  color: #7f8c8d;
+  text-align: left;
+  margin: 25px 0 0 23px;
+}
+
+#user-submit {
+  width: 60px;
+}
+
+#output h2{
+  color: #ecf0f1;;
+  display: none;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-family: 'Varela', sans-serif;
+}
+
+.card-name {
+  margin-top: -12px !important;
+}
+
+.green {
+  color: #2ecc71;
+}
+
+.red {
+  color: #e74c3c;
+}
