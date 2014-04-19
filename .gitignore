@@ -13,3 +13,4 @@
 
 # Ignore session key
 /config/initializers/secret_token.rb
+
