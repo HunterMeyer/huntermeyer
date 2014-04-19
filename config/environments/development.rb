@@ -26,4 +26,6 @@ Huntermeyer::Application.configure do
   config.assets.debug = true
 
   config.eager_load = false
+
+  config.log_level = :info
 end
