@@ -2,7 +2,7 @@ class Project < ActiveRecord::Base
   before_save { demo_url.downcase! if demo_url }
   before_save { repo_url.downcase! if repo_url }
   before_save { check_urls if (demo_url || repo_url) }
-  default_scope order('ordinal ASC')
+  default_scope { order('ordinal ASC') }
 
 
   def check_urls
