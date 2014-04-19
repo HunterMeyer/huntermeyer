@@ -105,20 +105,20 @@ $(function() {
   });
 
   $("img#GitHub").hover(function() {
-    $(this).attr('src', 'assets/g_c_hover.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/g_c_hover.png');
   }, function() {
-    $(this).attr('src', 'assets/g_c.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/g_c.png');
   });
 
   $("img#LinkedIn").hover(function() {
-    $(this).attr('src', 'assets/l_c_hover.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/l_c_hover.png');
   }, function() {
-    $(this).attr('src', 'assets/l_c.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/l_c.png');
   });
 
   $("img#Twitter").hover(function() {
-    $(this).attr('src', 'assets/t_c_hover.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/t_c_hover.png');
   }, function() {
-    $(this).attr('src', 'assets/t_c.png');
+    $(this).attr('src', 'https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/t_c.png');
   });
 });
