@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
   end
 
   def triangle
-    render layout: false
+    render layout: 'triangle'
   end
 
   def pig_latin
@@ -25,7 +25,7 @@ class ProjectsController < ApplicationController
   end
 
   def youtv
-    render layout: false
+    render layout: 'youtv'
   end
 
   def todo

@@ -1,0 +1,139 @@
+body {
+  background: url('https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/triangle_background.png');
+  background-repeat: repeat;
+}
+
+input {
+  text-indent: 4px;
+  border-radius: 3px;
+  border: 0;
+  height: 26px;
+  box-shadow: inset 0px 1px 2px black;
+}
+
+#user_submit {
+  background-color: #2383ea;
+  color: white;
+  border: none;
+  height: 26px;
+  box-shadow: 0 2px 3px -2px black;
+  border-radius: 3px;
+}
+
+#tri_type {
+  color: #2383ea;
+}
+
+#triangle {
+  display: none;
+  margin: 0 auto;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+}
+
+h1 {
+  margin-bottom: 25px;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+p {
+  text-decoration: bold;
+  color: #757779;
+}
+
+#input_container {
+  max-width: 700px;
+  width: 70%;
+  height: 20%;
+  background-color: rgba(250,250,250,.75);
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+#output {
+  display: none;
+  max-width: 700px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(250,250,250,.75);
+  border-radius: 5px;
+  margin: 0 auto; 
+  box-shadow: 0 8px 6px -6px black; 
+}
+
+h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#equ_info, #iso_info, #sca_info, #ill_info {
+  display: none;
+  font-size: 11px;
+  padding: 10px 10px 10px 10px;
+  width: 70%;
+  height: auto;
+  background-color: rgba(250,250,250,.75);
+  border-radius: 5px;
+  margin: 0 auto; 
+  box-shadow: 0 8px 6px -6px black;
+  margin-top: 20px; 
+  max-width: 700px;
+}
+
+#aboutTab {
+  border: 2px white solid;
+  border-radius: 5px;
+  position: fixed;
+  left: -4px;
+  top: 30px;
+  display: block;
+  width: 52px;
+  height: 157px;
+  background-color: #2383ea;
+  overflow: hidden;
+  opacity: .85;
+  cursor: pointer;
+}
+
+#aboutTitle {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  padding-right: 30px;
+  margin-top: 65px;
+  margin-bottom: 10px;
+  -webkit-transform: rotate(270deg);
+}
+
+#hunter, #mac {
+  width: 48%;
+  display: inline-block;
+  color: black;
+  font-size: 14px;
+}
+
+#mac {
+  float: right;
+  margin-right: 2%
+}
+
+#hunter {
+  float: left;
+  margin-left: 2%;
+}
+
+#hunter img, #mac img {
+  margin-left: 24%;
+  width: 50%;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  box-shadow: 0 4px 4px -2px black;
+}
+
+.modal-body {
+  background: url('https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/triangle_background.png');
+}
