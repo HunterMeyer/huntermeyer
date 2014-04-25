@@ -2,7 +2,7 @@ class UserMailer < ActionMailer::Base
   def new_contact(email, message)
     @email   = email
     @message = message
-    mail (
+    mail(
       from:    @email,
       to:      'hunt@huntermeyer.com',
       cc:      'hunnafresh@gmail.com',
