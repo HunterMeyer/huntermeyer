@@ -1,12 +1,13 @@
 class UserMailer < ActionMailer::Base
+  
   def new_contact(email, message)
-    @email   = email
+    @email = email
     @message = message
     mail(
-      from:    @email,
-      to:      'hunt@huntermeyer.com',
-      cc:      'hunnafresh@gmail.com',
+      from:    @email,
+      to:      'hunnafresh@gmail.com',
       subject: 'HunterMeyer.com | New Contact'
     )
   end
+
 end
