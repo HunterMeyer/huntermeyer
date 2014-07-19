@@ -1,194 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<link href="blue.css" rel="stylesheet" type="text/css">
-<title>Squeak it!</title>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39449228-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+  <title>Squeak it!</title>
+  <%= stylesheet_link_tag    'squeak/style', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'squeak/scripts' %>
+  <%= javascript_include_tag 'http://www.google.com/jsapi' %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' %>
+  <%= csrf_meta_tags %>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39449228-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </head>
 
 <body>
 
-<!-- Page Container -->
-<div id="page-container">
-
-<!-- Header -->
-<img alt="header" src="images/hdr.png" align="center" id="hdr" />
-<div id="hdr">
-  <p align="center" id="title">Welcome to Squeak!</p>
-</div>
-
-
-<!-- Back Button -->
-<div id="bck-container">
-  <a href="javascript:void(0);" onclick="changeVid('dec');">
-    <img alt="previous video" src="images/back.png" id="bck"
-      onMouseOver="this.src='images/back_hvr.png';"
-      onMouseOut="this.src='images/back.png';"
-    />
-  </a>
-</div>
-
-<!-- Forward Button -->
-<div id="fwd-container">
-  <a href="javascript:void(0);" onclick="changeVid('inc');">
-    <img alt="next video" src="images/fwd.png" id="fwd"
-      onMouseOver="this.src='images/fwd_hvr.png';"
-      onMouseOut="this.src='images/fwd.png';"
-    />
-  </a>
-</div>
-
-<!-- YouTube Player -->
-<div id="ytplayer-container" align="center">
-  <div id="ytplayer"></div>
-</div>
-<!--  Player API Construct Player and Add Listeners -->
-<script>
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-<!-- Load Iframe with Player Parameters -->
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('ytplayer', {
-    width: '60%',
-      height: '60%',
-    playerVars: {
-      'autoplay': 1,
-      'autohide': 1,
-      'rel': 0,
-      'showinfo': 0,
-      'modestbranding': 1,
-    },
-      videoId: '9RjJ6Og6lVc',
-    events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-    }
-  });
-}
-
-function onPlayerReady(event) {
-  event.target.playVideo();
-}
-
-function loadVideo(videoID) {
-  if(ytplayer) {
-    player.loadVideoById(videoID);
-  }
-}
-
-function onPlayerStateChange(event) {
-  var newState = event.data;
-  if (newState == 0) {
-    changeVid('inc');
-  }
-  else if (newState == 2) {
-    document.getElementById("ppbtn").value="Play" ;
-  }
-  else if (newState == 1 ) {
-    document.getElementById("ppbtn").value="Pause" ;
-  }
-}
-
-function playpause(){
-  var currentState = player.getPlayerState();
-  if (currentState == 2) {
-    player.playVideo() ;
-  }
-  else if (currentState == 1) {
-    player.pauseVideo() ;
-  }
-}
-
-</script>
-
-    <br>
-    <br>
-
-</div>
-
-<!-- New Search Bar and Submit -->
-<div id="searchwrapper">
-  <input type="text" id="searchbox" name="s" value="" placeholder="Start your marathon..." onkeyup="if (event.keyCode==13) changeSrc(), resetIndex()" />
-    <input type="button" id="searchbox_submit" value="Squeak it!" onclick="changeSrc(); resetIndex()" />
-</div>
-
-<!-- This Function will Reset index=0 to Load Fresh Videos -->
-<script>
-function resetIndex(){
-  index = 0 ;
-  changeSrc();
-}
-</script>
-
-
-<!-- Forward and Back Button Function -->
-<script type="text/javascript">
-var index = 0;
-function changeVid(way) {
-  if (way == "inc") {
-    index++;
-    changeSrc();
-  }
-  else if (way == "dec") {
-    index--;
-    changeSrc();
-  }
-}
-</script>
-
-
-<!-- Takes Query and Adds it to YouTube API Call -->
-<script type="text/javascript">
-function changeSrc() {
-  var base_url = "http://gdata.youtube.com/feeds/api/videos?q=" ;
-  var search_input = document.getElementById("searchbox").value ;
-  var new_url = base_url + search_input + "&format=5&max-results=50&orderby=relevance&time=this_month&v=2&alt=jsonc&callback=showVideo" ;
-  document.body.appendChild(document.createElement('script')).src= new_url ;
-}
-
-<!-- YouTube API CallBack Sends VideoId to Player -->
-function showVideo(response) {
-  var data = response.data ;
-  if(data.items[index].accessControl.syndicate="allowed" && data.items[index].restrictions==null) {
-    var items = response.data.items ;
-    var item = items[index] ;
-    videoid1 = item.id ;
-    vidtitle = item.title ;
-    document.getElementById("title").innerHTML= vidtitle ;
-    loadVideo(videoid1);
-  }
-  else {
-    changeVid('inc') ;
-  }
-}
-</script>
-
-
-<!-- Footer -->
-<img src="images/ftr.png" align="center" id="ftr" />
-
-
-</div>
-
+  <div id='page-container'>
+    <%= render 'header' %>
+    <%= yield %>
+    <%= render 'footer' %>
+  </div>
 
 </body>
 </html>
