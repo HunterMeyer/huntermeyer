@@ -11,6 +11,7 @@ gem 'activeresource'
 gem 'bootstrap-glyphicons'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'awesome_print'
+gem 'ap'
 
 group :production do
   gem 'rails_12factor'
@@ -20,6 +21,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'quiet_assets'
+  gem 'pry'
 end
 
 group :test, :development do
