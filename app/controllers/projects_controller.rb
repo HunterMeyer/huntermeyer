@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  render layout: 'application'
+  layout 'static_pages'
 
   def index
     @projects = Project.all

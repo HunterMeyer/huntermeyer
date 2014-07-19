@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
-  render layout: 'application'
+  layout 'static_pages'
 
   def index
   end

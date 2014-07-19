@@ -1,5 +1,5 @@
 class ListlyController < ApplicationController
-  render layout: 'todo'
+  layout 'listly'
 
   def index
   end

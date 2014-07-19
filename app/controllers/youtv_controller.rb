@@ -1,5 +1,5 @@
 class YoutvController < ApplicationController
-  render layout: 'youtv'
+  layout 'youtv'
 
   def index
   end

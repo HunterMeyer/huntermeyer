@@ -1,5 +1,5 @@
 class TriangleController < ApplicationController
-  render layout: 'triangle'
+  layout 'triangle'
 
   def index
   end

@@ -1,5 +1,5 @@
 class SqueakController < ApplicationController
-  render layout: 'squeak'
+  layout 'squeak'
 
   def index
   end

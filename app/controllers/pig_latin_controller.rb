@@ -1,5 +1,5 @@
 class PigLatinController < ApplicationController
-  render layout: 'pig_latin'
+  layout 'pig_latin'
 
   def index
   end

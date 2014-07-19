@@ -1,5 +1,5 @@
 class MusicSearchController < ApplicationController
-  render layout: 'music_search'
+  layout 'music_search'
 
   def index
   end

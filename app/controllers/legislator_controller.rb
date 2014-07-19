@@ -1,5 +1,5 @@
 class LegislatorController < ApplicationController
-  render layout: 'legislator'
+  layout 'legislator'
 
   def index
   end

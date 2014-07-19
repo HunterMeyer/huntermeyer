@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  render layout: 'application'
+  layout 'static_pages'
 
   def new
     @contact = Contact.new

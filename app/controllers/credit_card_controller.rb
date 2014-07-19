@@ -1,5 +1,5 @@
 class CreditCardController < ApplicationController
-  render layout: 'credit_card'
+  layout 'credit_card'
 
   def index
   end
