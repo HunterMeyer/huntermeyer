@@ -20,10 +20,10 @@ body {
 }
 
 /* Responify Fonts, Containers, Pics etc. */
-@media (max-width: 327px) { 
-  #banner-text   { font-size: 1.8rem; } 
-  #banner        { height:    2.2rem; } 
-  #middle-banner { height:      9rem; padding-top: 3.5%; } 
+@media (max-width: 327px) {
+  #banner-text   { font-size: 1.8rem; }
+  #banner        { height:    2.2rem; }
+  #middle-banner { height:      9rem; padding-top: 3.5%; }
   #me-pic        { height:      8rem; }
   .card          { width:        80%; margin-left: 10%; }
   button.read    { font-size:   150%; }
@@ -31,9 +31,9 @@ body {
 } /* Mobile device portrait 320px x 480px */
 
 @media (min-width: 328px) {
-  #banner-text   { font-size: 2.8rem; line-height: 30px; } 
+  #banner-text   { font-size: 2.8rem; line-height: 30px; }
   .small-letter  { font-size:   2rem; }
-  #banner        { height:      3rem; } 
+  #banner        { height:      3rem; }
   #middle-banner { height:     11rem; padding-top: 2.5%; }
   #me-pic        { height:     10rem; }
   .card          { width:        80%; margin-left: 10%; }
@@ -42,22 +42,22 @@ body {
   #banner-links  { font-size: 1.5rem; }
 } /* Mobile devices between 320px-480px */
 
-@media (min-width: 480px) { 
-  #banner-text   { font-size: 2.8rem; line-height: 38px; } 
+@media (min-width: 480px) {
+  #banner-text   { font-size: 2.8rem; line-height: 38px; }
   .small-letter  { font-size: 2.3rem; }
-  #banner        { height:      3rem; } 
-  #middle-banner { height:     13rem; padding-top: 1.5%; } 
+  #banner        { height:      3rem; }
+  #middle-banner { height:     13rem; padding-top: 1.5%; }
   #me-pic        { height:     12rem; }
   .card          { width:        44%; margin-left: 4%; }
   button.read    { font-size:   130%; }
   #banner-links  { font-size:   2rem; }
 } /* Mobile device landscape 480px x 320px */
 
-@media (min-width: 640px) { 
-  #banner-text   { font-size: 3.5rem; line-height: 50px; } 
+@media (min-width: 640px) {
+  #banner-text   { font-size: 3.5rem; line-height: 50px; }
   .small-letter  { font-size:   3rem; }
-  #banner        { height:    3.8rem; } 
-  #middle-banner { height:     16rem; padding-top: 1.5%; } 
+  #banner        { height:    3.8rem; }
+  #middle-banner { height:     16rem; padding-top: 1.5%; }
   #me-pic        { height:     15rem; }
   .card          { width:        44%; margin-left: 4%; }
   #cards         { width:        80%; }
@@ -65,22 +65,22 @@ body {
   #banner-links  { font-size:   2rem; }
 } /* Mobile device portrait 640px x 960px */
 
-@media (min-width: 758px) { 
+@media (min-width: 758px) {
   #banner-text   { font-size: 4.2rem; line-height: 60px; }
   .small-letter  { font-size: 3.2rem; }
-  #banner        { height:    4.6rem; } 
+  #banner        { height:    4.6rem; }
   #middle-banner { height:     16rem; padding-top: 1%; }
-  #me-pic        { height:     15rem; } 
+  #me-pic        { height:     15rem; }
   .card          { width:        28%; margin-left: 4%; }
   #cards         { width:        85%; }
   button.read    { font-size:   140%; }
   #banner-links  { font-size:   2rem; }
 } /* Mobile device landscape 800px x 480px */
 
-@media (min-width: 960px) { 
+@media (min-width: 960px) {
   #banner-text   { font-size:   5rem; line-height: 66px; }
   .small-letter  { font-size:   4rem; }
-  #banner        { height:    5.4rem; } 
+  #banner        { height:    5.4rem; }
   #middle-banner { height:     17rem; padding-top: 1%; }
   #me-pic        { height:     16rem; }
   .card          { width:      22.5%; margin-left: 2%; }
@@ -88,10 +88,10 @@ body {
   #banner-links  { font-size:   2rem; }
 } /* Devices larger than 960px x 640px */
 
-@media (min-width: 1024px) { 
-  #banner-text   { font-size:   6rem; line-height: 82px; } 
+@media (min-width: 1024px) {
+  #banner-text   { font-size:   6rem; line-height: 82px; }
   .small-letter  { font-size:   5rem; }
-  #banner        { height:    6.4rem; } 
+  #banner        { height:    6.4rem; }
   #middle-banner { height:     18rem; padding-top: 0.75%; }
   #me-pic        { height:     17rem; }
   .card          { width:      22.5%; margin-left: 2%; }
@@ -205,7 +205,7 @@ button.read {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 2%;
-  background-color: #66AC7C; 
+  background-color: #66AC7C;
   border: none;
   border-bottom: 4px solid #457754;
   border-radius: 8px;
@@ -241,7 +241,7 @@ li {
   height: 50px;
   margin: 0 auto;
   margin-top: 20px;
-  background-color: #66AC7C; 
+  background-color: #66AC7C;
   border: none;
   border-bottom: 4px solid #457754;
   border-radius: 8px;
@@ -301,7 +301,7 @@ p.information {
   line-height: 26px;
   color: #333333;
   font-size: 22px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* Projects Cards */
@@ -314,7 +314,7 @@ p.information {
   height: 40px;
   margin: 0 auto;
   margin-top: 5px;
-  background-color: #66AC7C; 
+  background-color: #66AC7C;
   border: none;
   border-bottom: 4px solid #457754;
   border-radius: 6px;
@@ -356,7 +356,7 @@ p.information {
   height: 40px;
   margin: 0 auto;
   margin-top: 5px;
-  background-color: rgb(80, 162, 189); 
+  background-color: rgb(80, 162, 189);
   border: none;
   border-bottom: 4px solid rgb(63, 119, 138);
   border-radius: 6px;
@@ -424,7 +424,7 @@ p.information {
   background-color: #f8f8f8 !important;
 }
 
-#contact_email {   
+#contact_email {
   height: 30px !important;
 }
 
@@ -434,7 +434,7 @@ p.information {
   height: 40px;
   margin-left: 1%;
   margin-top: 10px;
-  background-color: #66AC7C; 
+  background-color: #66AC7C;
   border: none;
   color: #FFF;
   border-bottom: 4px solid #457754;
@@ -463,7 +463,7 @@ p.information {
   width: 100%;
   height: 113px;
   background: url('https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/dark.png');
-  text-align: center; 
+  text-align: center;
 }
 
 #follow-banner {
@@ -610,7 +610,7 @@ p.information {
 .modal-header {
   padding: 9px 15px;
   font-family: 'Poiret One', cursive;
-  color: #FFFFFF;   
+  color: #FFFFFF;
   background-color: #66AC7C;
   border-bottom: 2px solid #457754;
   border-top-left-radius: 3px;
