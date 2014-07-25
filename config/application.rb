@@ -62,8 +62,8 @@ module Huntermeyer
     # Enable the asset pipeline
     config.assets.enabled = true
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-    config.assets.paths << "#{Rails.root}/app/assets/javascripts/squeak"
-    config.assets.paths << "#{Rails.root}/app/assets/stylesheets/squeak"
+    config.assets.paths << "#{Rails.root}/app/assets/javascripts/squeak/"
+    config.assets.paths << "#{Rails.root}/app/assets/stylesheets/squeak/"
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
