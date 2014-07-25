@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Squeak it!</title>
-  <%= stylesheet_link_tag    'squeak', media: 'all' %>
+  <%= stylesheet_link_tag    params[:controller], media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag 'squeak' %>
   <%= javascript_include_tag 'http://www.google.com/jsapi' %>
