@@ -12,10 +12,10 @@ h1 {
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-h3 {
+h3.label {
   color: #7f8c8d;
   font-family: 'Varela', sans-serif;
-  margin: 28px 25px 0 0;
+  padding: 24px 110px 5px 0px;
   font-size: 140%
 }
 
@@ -24,14 +24,21 @@ h3 {
 }
 
 #account-wrapper {
-  margin: 200px auto 0 auto;
-  width: 300px;
-  height: 185px;
+  margin: 10% auto 0 auto;
+  width: 400px;
+  height: 238px;
   border-radius: 10px;
   background: url('https://googledrive.com/host/0BzGPB-VGfaP5ZXRCRGdYYkdSMGs/card.png') no-repeat;
   background-size: cover;
   box-shadow: 0 9px 6px -4px black;
   text-align: center;
+}
+
+#account-wrapper p {
+  font-family: 'Kameron', serif;
+  color: #7f8c8d;
+  text-align: left;
+  margin: 28px 0 0 26px;
 }
 
 #piggy {
@@ -44,27 +51,20 @@ h3 {
   font-family: 'Kameron', serif;
   font-size: 1.2em;
   margin: 0 auto;
-  width: 258px;
-  height: 25px;
+  margin-top: 55px;
+  width: 350px;
+  height: 33px;
   border: none;
   box-shadow: inset 0px 1px 2px black;
   text-align: center;
-  margin-top: 40px;
   color: #f39c12;
 }
 
-#account-wrapper p {
-  font-family: 'Kameron', serif;
-  color: #7f8c8d;
-  text-align: left;
-  margin: 25px 0 0 23px;
+.card-exp {
+  padding-left: 188px;
 }
 
-#user-submit {
-  width: 60px;
-}
-
-#output h2{
+#output h2 {
   color: #ecf0f1;;
   display: none;
   text-shadow: black 0.1em 0.1em 0.2em;
