@@ -29,13 +29,13 @@ $(function() {
           $('#myModal').modal('show');
         });
         })
-        if (legislator.twitter_id != "null") {
+        if (legislator.twitter_id != null) {
           $("ul#person" + i).append("<a target='_blank' href='http://www.twitter.com/" + legislator.twitter_id + "'><img class='icons' src='https://googledrive.com/host/0BzGPB-VGfaP5LTBjZ0VPSEo4azA/twitter.png'>").hide().fadeIn();
         }
-        if (legislator.youtube_id != "null") {
+        if (legislator.youtube_id != null) {
           $("ul#person" + i).append("<a target='_blank' href='http://www.youtube.com/user/" + legislator.youtube_id + "'><img class='icons' src='https://googledrive.com/host/0BzGPB-VGfaP5LTBjZ0VPSEo4azA/youtube.png'>").hide().fadeIn();
         }
-        if (legislator.facebook_id != "null") {
+        if (legislator.facebook_id != null) {
           $("ul#person" + i).append("<a target='_blank' href='http://www.facebook.com/" + legislator.facebook_id + "'><img class='icons' src='https://googledrive.com/host/0BzGPB-VGfaP5LTBjZ0VPSEo4azA/facebook.png'>").hide().fadeIn();
         }
         i++;
