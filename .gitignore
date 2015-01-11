@@ -10,6 +10,9 @@
 # Ignore Mac files
 .DS_Store
 
+# Ignore image files
+/app/assets/img/
+
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
