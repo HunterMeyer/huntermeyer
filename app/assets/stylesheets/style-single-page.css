@@ -26,7 +26,7 @@ a.brand img {
 	color: #39D084;
 }
 /***** Profile *****/
-	#profile h1 {
+#profile h1 {
 	color:#39d084;
 	font-weight: normal;
 }
@@ -38,7 +38,7 @@ a.brand img {
 	color:#fff;
 	font-size:18px;
 	line-height: 35px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 #profile .container .span5 {
 	padding:40px 0;
