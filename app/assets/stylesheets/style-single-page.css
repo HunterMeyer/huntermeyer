@@ -1,4 +1,16 @@
 /*This stylesheet contains some custom class rather than Bootstrap*/
+.error {
+  color: #f04949;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.error > .wrapper > div {
+  font-weight: normal;
+  font-size: 14px;
+  color: #203748;
+}
 
 a.brand img {
 	border-radius:50%;

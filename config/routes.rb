@@ -1,7 +1,6 @@
 Huntermeyer::Application.routes.draw do
-  resources :contacts
-  resources :projects
+  resources :contacts, defaults: { format: :js }
 
-  root 'static_pages#index'
+  root 'home#index'
 
 end

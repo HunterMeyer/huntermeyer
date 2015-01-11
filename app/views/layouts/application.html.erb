@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head>
-<meta charset='utf-8'>
-<title>Hunter Meyer</title>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<meta name='description' content='Homepage of Hunter Meyer'>
-<meta name='keywords' content='Hunter Meyer'>
-<meta name='author' content='Hunter Meyer'>
-<%= stylesheet_link_tag 'application' %>
-<%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700' %>
-<%= javascript_include_tag 'application' %>
-</head>
-<body>
-  <%= render 'layouts/header' %>
+  <head>
+    <meta charset='utf-8'>
+    <title>Hunter Meyer</title>
+    <meta name='viewport'    content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Homepage of Hunter Meyer'>
+    <meta name='keywords'    content='Hunter Meyer'>
+    <meta name='author'      content='Hunter Meyer'>
+    <%= stylesheet_link_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
 
-  <%= yield %>
+    <%= render 'layouts/flash' %>
 
-  <%= render 'layouts/footer' %>
-  <!-- Contact form in Modal -->
-  <!-- Modal -->
-  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
-    </div>
-    <div class="modal-body">
-      <form>
-        <input type="text" placeholder="Yopur Name">
-        <input type="text" placeholder="Your Email">
-        <input type="text" placeholder="Website (Optional)">
-        <textarea rows="3" style="width:80%"></textarea>
-        <br/>
-        <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
-      </form>
-    </div>
-  </div>
+    <%= yield %>
 
-</body>
+    <%= render 'layouts/footer' %>
+
+    <%= render 'layouts/contact_form' %>
+
+
+  </body>
+
 </html>
