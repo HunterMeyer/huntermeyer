@@ -43,6 +43,14 @@ a.brand img {
 #profile .container .span5 {
 	padding:40px 0;
 }
+#profile > .span3 > img {
+  background-position: center;
+  width: 270px;
+  height: 270px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  }
 a.hire-me {
 	display: inline-block;
  *display: inline;
@@ -68,6 +76,7 @@ ul.social-icons {
 	margin:20px 0;
 }
 ul.social-icons li {
+  font-size: 40px;
 	list-style:none;
 	display:inline-block;
 	margin:10px;
