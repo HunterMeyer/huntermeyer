@@ -8,7 +8,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'activeresource'
-gem 'bootstrap-glyphicons'
+gem 'font-awesome-sass'
 gem 'awesome_print'
 gem 'ap'
 
