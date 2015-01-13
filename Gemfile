@@ -8,7 +8,7 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'activeresource'
-gem 'font-awesome-sass'
+gem 'font-awesome-rails'
 gem 'awesome_print'
 gem 'ap'
 
