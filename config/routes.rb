@@ -5,5 +5,5 @@ Huntermeyer::Application.routes.draw do
 
   match '/squeak',      to: 'squeak#index',       via: 'get'
   match '/legislator',  to: 'legislator#index',   via: 'get'
-
+  match '/musicsearch', to: 'music_search#index', via: 'get'
 end

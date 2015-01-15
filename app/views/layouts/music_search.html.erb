@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag 'music_search' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'music_search' %>
+    <%= javascript_include_tag 'bootstrap_modal' %>
+    <title>Music Search</title>
+  </head>
+  <body>
+    <div class='copyright'>
+      <span>Developed by <%= link_to 'Hunter Meyer', 'http://huntermeyer.com' %></span>
+    </div>
+
+    <%= yield %>
+
+    <div id='music-video' class='modal fade'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+            <h4 class='modal-title'>Music Video</h4>
+          </div>
+          <div class='modal-body'>
+            <p>Empty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
