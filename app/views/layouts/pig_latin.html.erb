@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>English to Pig Latin</title>
+    <%= stylesheet_link_tag 'pig_latin' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'pig_latin' %>
+    <%= javascript_include_tag 'bootstrap_dropdown' %>
+  </head>
+  <body>
+
+    <div class='copyright'>
+      <span>Developed by <%= link_to 'Hunter Meyer', 'http://huntermeyer.com' %></span>
+    </div>
+
+    <%= yield %>
+
+  </body>
+</html>
