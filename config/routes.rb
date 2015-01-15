@@ -3,4 +3,5 @@ Huntermeyer::Application.routes.draw do
 
   root 'home#index'
 
+  match '/squeak',      to: 'squeak#index',       via: 'get'
 end

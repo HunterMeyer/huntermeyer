@@ -58,6 +58,7 @@ module Huntermeyer
     config.assets.enabled = true
     # config.assets.precompile += %w(*.js squeak.css credit_card.css static_pages.css legislator.css)
     config.assets.paths << "#{Rails.root}/app/assets/img"
+    # config.assets.precompile += %w(*.js squeak.css credit_card.css static_pages.css legislator.css)
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
