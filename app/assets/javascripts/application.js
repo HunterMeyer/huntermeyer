@@ -12,6 +12,3 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//= require jquery.fancybox
-//= require scripts
