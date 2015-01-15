@@ -99,7 +99,7 @@ ul.social-icons li a:hover {
 	text-align:left;
 	padding:47px 0;
 }
-#skills .ps, #skills .ai, #skills .html, #skills .css {
+.skill {
 	padding:25px;
 	width:100px;
 	height:100px;
@@ -114,22 +114,31 @@ ul.social-icons li a:hover {
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-#skills .ps {
-	background:#30a5dc;
+#skills .ror {
+  background: #AB3838;
 }
-#skills .ai {
-	background:#ee742b;
+#skills .js {
+  background: #D9C018;
+}
+#skills .psql {
+  background: #316192;
+}
+#skills .r {
+  background: #3F93D7;
+}
+#skills .unix {
+  background: #1B1B1B;
 }
 #skills .html {
-	background:#f04949;
+	background:#E44D26;
 }
 #skills .css {
 	background:#39d084;
 }
-#skills .ps:hover, #skills .ai:hover, #skills .html:hover, #skills .css:hover {
+#skills .skill:hover {
 	border:8px solid #fff;
 }
-#skills .ps h3, #skills .ai h3, #skills .html h3, #skills .css h3 {
+#skills h3 {
 	color:#fff;
 	font-size: 3.4em;
 	font-weight: normal;
@@ -162,21 +171,39 @@ ul.social-icons li a:hover {
 #skills .span5 h3 span {
 	float:right;
 }
-.ps2 {
-	width:90%;
-	background:#30a5dc;
-	-moz-animation:html5 2s ease-out;
-	-webkit-animation:html5 2s ease-out;
+.ror2 {
+  width:90%;
+  background:#AB3838;
+  -moz-animation:html5 2s ease-out;
+  -webkit-animation:html5 2s ease-out;
 }
-.ai2 {
-	width:80%;
-	background:#ee742b;
-	-moz-animation:css3 2s ease-out;
-	-webkit-animation:css3 2s ease-out;
+.js2 {
+  width: 80%;
+  background: #D9C018;
+  -moz-animation:html5 2s ease-out;
+  -webkit-animation:html5 2s ease-out;
+}
+.psql2 {
+  width: 70%;
+  background: #316192;
+  -moz-animation:html5 2s ease-out;
+  -webkit-animation:html5 2s ease-out;
+}
+.r2 {
+  width: 60%;
+  background: #3F93D7;
+  -moz-animation:html5 2s ease-out;
+  -webkit-animation:html5 2s ease-out;
+}
+.unix2 {
+  width: 55%;
+  background: #1B1B1B;
+  -moz-animation:photoshop 2s ease-out;
+  -webkit-animation:photoshop 2s ease-out;
 }
 .html2 {
 	width:75%;
-	background:#f04949;
+	background: #E44D26;
 	-moz-animation:jquery 2s ease-out;
 	-webkit-animation:jquery 2s ease-out;
 }
