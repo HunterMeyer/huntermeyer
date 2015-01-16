@@ -1,2 +1,2 @@
-$('.error').remove();
-$('.new_contact').before("<%= j generate_form_errors(errors) %>");
+$('#message-success').hide();
+$('#message-warning').html('<%= j generate_form_errors(errors) %>').show();
