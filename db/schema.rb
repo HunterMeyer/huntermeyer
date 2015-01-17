@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20150117192456) do
     t.text     "url"
     t.text     "image_url"
     t.text     "repo_url"
-    t.text     "twitter_url"
+    t.text     "twitter_id"
     t.text     "tags"
     t.integer  "ordinal"
     t.datetime "created_at"

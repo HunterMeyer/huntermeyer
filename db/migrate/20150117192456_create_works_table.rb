@@ -8,7 +8,7 @@ class CreateWorksTable < ActiveRecord::Migration
       t.text :url
       t.text :image_url
       t.text :repo_url
-      t.text :twitter_url
+      t.text :twitter_id
       t.text :tags
       t.integer :ordinal
       t.timestamps
