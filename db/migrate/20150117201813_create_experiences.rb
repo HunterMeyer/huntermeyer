@@ -4,8 +4,8 @@ class CreateExperiences < ActiveRecord::Migration
       t.text :company
       t.text :title
       t.text :url
-      t.text :start
-      t.text :end, default: 'Present'
+      t.text :start_date
+      t.text :end_date, default: 'Present'
       t.text :description
       t.integer :ordinal
       t.timestamps
