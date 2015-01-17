@@ -1,3 +1,96 @@
+# Seed education data
+Education.create([
+  {
+    school: 'Johns Hopkins University',
+    concentration: 'Data Science Specialization',
+    url: 'https://www.coursera.org/specialization/jhudatascience/1',
+    start_date: 'Feb 2014',
+    end_date: 'Present',
+    city: nil,
+    state: nil,
+    ordinal: 1,
+    visible: true,
+    highlights: nil,
+    description: 'Identify and classify data science problems, learn the principles of tidy data and data sharing, apply the tools for
+      data cleaning and manipulation, make visual representations of data using plotting systems in R, create rich analytic graphics from
+      different types of datasets, create visualizations of multidimensional data using exploratory multivariate statistical techniques,
+      perform inferential tasks in highly targeted settings, fit regression models, interpret coefficients, investigate residuals and
+      variability, apply multiple machine learning tools, build and evaluate predictors on real data, communicate using statistics and
+      statistical products.'
+  },
+  {
+    school: 'University of Maryland, College Park',
+    concentration: 'Cybersecurity Specialization',
+    url: 'https://www.coursera.org/specialization/cybersecurity/7',
+    start_date: 'Jan 2015',
+    end_date: 'Present',
+    city: nil,
+    state: nil,
+    ordinal: 2,
+    visible: true,
+    highlights: nil,
+    description: 'Design and build secure systems through principles of human-computer interaction and in-depth study of Usable Security
+      (authentication passwords, two-factor auth, biometrics, tracking, secure and anonymous browsing, data sharing), as well as Software
+      Security (low-level memory based attacks, buffer overflows, SQL injection, session hijacking, penetration testing), Cryptography
+      (private-key, public-key, authenticated encryption, digital signatures, stream and block ciphers, hash functions, Diffie-Hellman Key
+      Exchange, El Gamal Encryption, RSA), and Hardware Security (trojans, side-channel attacks, ElectroMagnetic analysis, fault injection
+      attack, Trust Platform Modules, Physical Unclonable Functions, RFID).'
+  },
+  {
+    school: 'University of Texas, Austin',
+    concentration: 'Foundations of Data Analysis',
+    url: 'https://www.edx.org/course/foundations-data-analysis-utaustinx-ut-7-01x',
+    start_date: 'Nov 2014',
+    end_date: 'Present',
+    city: nil,
+    state: nil,
+    ordinal: 3,
+    visible: true,
+    highlights: nil,
+    description: 'Hands on course with a data lab to teach fundamental statistical topics such as descriptive statistics, inferential
+      testing, and modeling using the R programming language. Concepts include describing normal distributions, univariate descriptive
+      statistics, bivariate distributions and identifying relationships between quantitative data, identifying relationships between
+      categorical data, linear function models, exponential and logistic function models, sampling distribution and estimation, and
+      hypothesis testing.'
+  },
+  {
+    school: 'Epicodus',
+    concentration: 'Web Development',
+    url: 'http://www.epicodus.com',
+    start_date: 'July 2014',
+    end_date: 'Present',
+    city: 'Portland',
+    state: 'OR',
+    ordinal: 4,
+    visible: true,
+    highlights: nil,
+    description: 'Epicodus is a four month, forty hour per week, in-person class on programming in Portland, Oregon. Each day starts with
+      a 5-10 minute standup, where students can share anything with the rest of the class: coding tricks they learned, interesting blog
+      posts they read, upcoming meetups they\'re going to. Then students spend the entire rest of the day coding a new program each day
+      using pair-programming and test driven development. At the end of the course students pair in groups of ~6 to apply all of their
+      technical and project management skills to build a real-world application for a local business. Skills include Ruby, Rails, SQL,
+      jQuery, Active Record, Javascript, AJAX, AngularJS, HTML and CSS, and APIs.'
+  },
+  {
+    school: 'University of Central Florida',
+    concentration: 'B.A. Interpersonal/Organizational Communication & Marketing',
+    url: 'http://www.ucf.edu/',
+    start_date: 'Aug 2010',
+    end_date: 'Present',
+    city: 'Orlando',
+    state: 'FL',
+    ordinal: 4,
+    visible: true,
+    highlights: 'Vice-President\'s Gold Medal of Honor, Dean\'s List, Lambda Pi Eta Communication Honor Society, Phi Sigma Pi National Honor
+      Fraternity, Tau Sigma National Honor Society',
+    description: 'The field of communication-studies that deals with how we communicate within organizations and in interpersonal settings.
+      Heavy focus on the study and research of oral communication, human relations, logical reasoning, argumentation and debate, gender and
+      intercultural issues, conflict management, nonverbal and attitude analysis, and visual communication. The marketing concentration
+      focused on intelligence gathering, supply chain and operations management, consumer behavior, analysis and research, and marketing
+      strategy.'
+  }
+])
+
 # Seed experience data
 Experiences.create([
   {
