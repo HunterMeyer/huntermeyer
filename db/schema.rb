@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 20150117192456) do
   create_table "works_tables", force: true do |t|
     t.text     "name"
     t.text     "caption"
-    t.text     "headline"
+    t.text     "position"
     t.text     "description"
     t.text     "url"
     t.text     "image_url"

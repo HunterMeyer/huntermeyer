@@ -3,7 +3,7 @@ class CreateWorksTable < ActiveRecord::Migration
     create_table :works_tables do |t|
       t.text :name
       t.text :caption
-      t.text :headline
+      t.text :position
       t.text :description
       t.text :url
       t.text :image_url
