@@ -7,7 +7,9 @@
       <div class='row item'>
         <div class='twelve columns'>
           <h3><%= e.company %></h3>
-          <p class='info'><%= link_to e.title, e.url, target: '_blank' %><span class='bull'>&bull;</span><em class='date'><%= e.dates %></em></p>
+          <p class='info'>
+            <%= link_to e.title, e.url, target: '_blank' %><span class='bull'>&bull;</span><em class='date'><%= e.dates %></em>
+          </p>
           <div class='info'><i class='fa fa-map-marker'></i> <em class='location'><%= e.location %></em></div>
           <p><%= e.formatted_description('long_description') %></p>
         </div>
