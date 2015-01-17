@@ -3,16 +3,16 @@ class Work < ActiveRecord::Base
   def self.build_works
     works.each do |w|
       Work.create({
-        name: w[:name],
-        caption: w[:caption],
-        position: w[:position],
+        name:        w[:name],
+        caption:     w[:caption],
+        position:    w[:position],
         description: w[:description],
-        url: w[:url],
-        image_url: w[:image_url],
-        repo_url: w[:repo_url],
-        twitter_id: w[:twitter_id],
-        tags: w[:tags],
-        ordinal: w[:ordinal]
+        url:         w[:url],
+        image_url:   w[:image_url],
+        repo_url:    w[:repo_url],
+        twitter_id:  w[:twitter_id],
+        tags:        w[:tags],
+        ordinal:     w[:ordinal]
       })
     end
   end
