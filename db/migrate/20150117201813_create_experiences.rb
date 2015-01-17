@@ -11,6 +11,7 @@ class CreateExperiences < ActiveRecord::Migration
       t.text :highlights
       t.text :city
       t.text :state
+      t.text :status
       t.integer :ordinal
       t.timestamps
     end

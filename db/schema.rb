@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150117201813) do
     t.text     "highlights"
     t.text     "city"
     t.text     "state"
+    t.text     "status"
     t.integer  "ordinal"
     t.datetime "created_at"
     t.datetime "updated_at"
