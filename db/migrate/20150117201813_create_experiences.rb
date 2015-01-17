@@ -8,6 +8,8 @@ class CreateExperiences < ActiveRecord::Migration
       t.text :end_date, default: 'Present'
       t.text :description
       t.text :highlights
+      t.text :city
+      t.text :state
       t.integer :ordinal
       t.timestamps
     end
