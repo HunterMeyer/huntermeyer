@@ -23,6 +23,9 @@
 /* ------------------------------------------------------------------ */
 
 body { background: #0f0f0f; }
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -271,14 +274,20 @@ ul#nav li.current a { color: #F06000; }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
+ }
+ #resume p.info {
    margin-bottom: 18px;
-   margin-top: 9px;
+   margin-top: -8px;
+}
+#resume div.info {
+  margin-top: -15px;
+  margin-bottom: 10px;
 }
 #resume .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#resume .date, #resume .location {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }

@@ -235,6 +235,9 @@
    #resume .main-col { padding-right: 30px; }
    #resume h3, #resume .info { text-align: center; }
 
+   #resume .bull { display: none; }
+   #resume .info, #resume .date { display: block; margin-top: 0; }
+
    .bars { width: 100%; }
 
 
