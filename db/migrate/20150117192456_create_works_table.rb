@@ -1,6 +1,6 @@
 class CreateWorksTable < ActiveRecord::Migration
   def change
-    create_table :works_tables do |t|
+    create_table :works do |t|
       t.text :name
       t.text :caption
       t.text :position
