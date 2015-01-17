@@ -3,226 +3,41 @@
     <div class='twelve columns collapsed'>
       <h1>Check Out Some of My Work.</h1>
       <div id='portfolio-wrapper' class='bgrid-quarters s-bgrid-thirds cf'>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-01' title=''>
-              <img alt='Jr.DevJobs' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/jrdevjobs.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>Jr.DevJobs</h5>
-                  <p>Find your first dev job</p>
+        <% @works.each do |w| %>
+          <div class='columns portfolio-item'>
+            <div class='item-wrap'>
+              <%= link_to "#modal-#{w.id}", title: w.name do %>
+                <%= image_tag w.image_url, alt: w.name %>
+                <div class='overlay'>
+                  <div class='portfolio-item-meta'>
+                    <h5><%= w.name %></h5>
+                    <p><%= w.caption %></p>
+                  </div>
                 </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
+                <div class='link-icon'><i class='fa fa-plus'></i></div>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-02' title=''>
-              <img alt='MonthlyStash' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/monthlystash.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>MonthlyStash</h5>
-                  <p>Discreet deliveries</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-03' title=''>
-              <img alt='MantraGram' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/mantragram.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>MantraGram</h5>
-                  <p>Remember your inspiration</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-04' title=''>
-              <img alt='Squeak' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/squeak.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>Squeak</h5>
-                  <p>Start your marathon</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-05' title=''>
-              <img alt='FleetZoo' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/fleetzoo.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>FleetZoo</h5>
-                  <p>Integrated fleet management</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-06' title=''>
-              <img alt='MusicSearch' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/musicsearch.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>MusicSearch</h5>
-                  <p>Discover more about your tunes</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-07' title=''>
-              <img alt='ECS' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/ecs.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>ECS | 2014</h5>
-                  <p>Corrusion conference</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
-        <div class='columns portfolio-item'>
-          <div class='item-wrap'>
-            <a href='#modal-08' title=''>
-              <img alt='Legislator' src='https://s3-us-west-2.amazonaws.com/huntermeyer/images/legislator.png'>
-              <div class='overlay'>
-                <div class='portfolio-item-meta'>
-                  <h5>Legislator Lookup</h5>
-                  <p>Stay informed</p>
-                </div>
-              </div>
-              <div class='link-icon'><i class='fa fa-plus'></i></div>
-            </a>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
 
     <!-- MODALS -->
+    <% @works.each do |w| %>
+      <%= content_tag(:div, class: 'popup-modal mfp-hide', id: "modal-#{w.id}") do %>
+        <div class='description-box'>
+          <h4><%= w.name %> | <%= w.position %></h4>
+          <p><%= w.description %></p>
+          <span class='categories'><i class='fa fa-tags'></i><%= w.tags %></span>
+        </div>
+        <div class='link-box'>
+          <%= link_to w.url, target: '_blank' do %>
+            <i class='fa fa-external-link'></i> Open
+          <% end %>
+          <a class='popup-modal-dismiss'>Close</a>
+        </div>
+      <% end %>
+    <% end %>
 
-    <div id='modal-01' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>Jr.DevJobs | Co-Founder</h4>
-        <p>
-          Find your first dev job! Featuring jobs and paid internships for bootcamp grads, CS students & self taught programmers.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>Ruby on Rails, AJAX, AWS, ElasticSearch, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='https://jrdevjobs.com' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-02' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>MonthlyStash | Founder</h4>
-        <p>
-          Discreetly delivering boxes full of rolling papers, lighters, and incense every month. Saving people time, money, and trips to store.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>Ruby on Rails, Foundation, pSQL, Stripe, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='http://monthlystash.com' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-03' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>MantraGram | Developer</h4>
-        <p>
-          Never forget your Mantra, your inspiration. Sign up and we'll text you your motivational messages and images to keep you focused.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>Ruby on Rails, Custom Themes, SMS Messaging, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='http://mantragram.herokuapp.com' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-04' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>Squeak | Developer</h4>
-        <p>
-          Start your marathon! Type in a keyword to start an endless, uninterrupted stream of related YouTube videos.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>JavaScript, YouTube Data/Player API, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='/squeak' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-05' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>Fleet Zoo | Contract Work</h4>
-        <p>
-          Developed the user interface for FleetZoo, a fleet management platform for the transportation industry.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>.NET, C#, CSS, HTML, Responsive Design, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='http://www.fleetzoo.com' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-06' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>MusicSearch | Developer</h4>
-        <p>
-          Discover more of your favorite artists' music and album info. Find a song you love and stream it through Spotify or YouTube!
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>JavaScript, Spotify API, YouTube API, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='/musicsearch' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-07' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>ECS | Contract Work</h4>
-        <p>
-          Developed the UI, database, and payment system for the 2014 ECS Conference, a unique conference focusing on corrosion.
-        </p>
-        <span class='categories'><i class='fa fa-tags'></i>Ruby on Rails, Admin Panel, PayPal, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='http://rails-ecs.herokuapp.com/' target='_blank'><i class='fa fa-external-link'></i> Demo</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
-    <div id='modal-08' class='popup-modal mfp-hide'>
-      <div class='description-box'>
-        <h4>LegislatorLookup | Developer</h4>
-        <p>
-          Stay politically informed by looking up the Senators and Representatives in your zipcode to find their contact info and sponsored bills.
-        </p>
-        <span class='categories'><i class='fa fa-tag'></i>JavaScript, Sunlight APIs, +More</span>
-      </div>
-      <div class='link-box'>
-        <a href='/legislator' target='_blank'><i class='fa fa-external-link'></i> Open</a>
-        <a class='popup-modal-dismiss'>Close</a>
-      </div>
-    </div>
   </div>
 </section>
