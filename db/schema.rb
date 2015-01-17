@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20150117201813) do
     t.text     "start_date"
     t.text     "end_date",    default: "Present"
     t.text     "description"
+    t.text     "highlights"
     t.integer  "ordinal"
     t.datetime "created_at"
     t.datetime "updated_at"
