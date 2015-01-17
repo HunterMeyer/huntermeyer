@@ -5,8 +5,9 @@ class CreateExperiences < ActiveRecord::Migration
       t.text :title
       t.text :url
       t.text :start_date
-      t.text :end_date, default: 'Present'
-      t.text :description
+      t.text :end_date
+      t.text :long_description
+      t.text :short_description
       t.text :highlights
       t.text :city
       t.text :state
