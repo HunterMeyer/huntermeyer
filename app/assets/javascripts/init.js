@@ -6,8 +6,6 @@
 
 jQuery(document).ready(function($) {
 
-$('.contact-address i').after(" <a href='mailto:hunt@huntermeyer.com?subject=Website contact' target='_blank'>hunt@huntermeyer.com</a>");
-
 /*----------------------------------------------------*/
 /* FitText Settings
 ------------------------------------------------------ */
