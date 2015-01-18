@@ -361,3 +361,79 @@ Work.create([
     ordinal: 8
   }
 ])
+
+# Seed skill data
+Skill.create([
+  {
+    name: 'Ruby on Rails',
+    width: 92,
+    ordinal: 1,
+    visible: true
+  },
+  {
+    name: 'JavaScript, jQuery, AJAX',
+    width: 85,
+    ordinal: 2,
+    visible: true
+  },
+  {
+    name: 'PostgreSQL',
+    width: 78,
+    ordinal: 3,
+    visible: true
+  },
+  {
+    name: 'R, R Studio',
+    width: 65,
+    ordinal: 4,
+    visible: true
+  },
+  {
+    name: 'ElasticSearch',
+    width: 50,
+    ordinal: 5,
+    visible: true
+  },
+  {
+    name: 'Linux, UNIX',
+    width: 70,
+    ordinal: 6,
+    visible: true
+  },
+  {
+    name: 'AngularJS',
+    width: 48,
+    ordinal: 7,
+    visible: true
+  },
+  {
+    name: 'Amazon Web Services',
+    width: 60,
+    ordinal: 8,
+    visible: true
+  },
+  {
+    name: 'Git',
+    width: 80,
+    ordinal: 9,
+    visible: true
+  },
+  {
+    name: 'Data Mining',
+    width: 78,
+    ordinal: 10,
+    visible: true
+  },
+  {
+    name: 'Heroku',
+    width: 90,
+    ordinal: 11,
+    visible: true
+  },
+  {
+    name: 'Bootstrap',
+    width: 90,
+    ordinal: 12,
+    visible: true
+  }
+])
