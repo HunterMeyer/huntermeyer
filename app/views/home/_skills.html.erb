@@ -6,7 +6,16 @@
     <div class='bars'>
       <ul class='skills'>
         <% @skills.each do |s| %>
-          <li><span class='bar-expand skill' style='<%= "width: #{s.width}%" %>'></span><em><%= s.name %></em></li>
+          <li><%= content_tag(:span, nil, class: "bar-expand #{s.css_class}") %><em><%= s.name %></em></li>
+          <style>
+            <%= ".#{s.css_class}" %> {
+              width: <%= "#{s.width}%" %>;
+              -moz-animation: <%= s.css_class %> 2s ease;
+              -webkit-animation: <%= s.css_class %> 2s ease;
+            }
+            @-moz-keyframes <%= s.css_class %> { 0% { width: 0px; } 100% { width: <%= "#{s.width}%" %>; } }
+            @-webkit-keyframes <%= s.css_class %> { 0% { width: 0px; } 100% { width: <%= "#{s.width}%" %>; } }
+          </style>
         <% end %>
       </ul>
     </div>
