@@ -435,5 +435,11 @@ Skill.create([
     width: 90,
     ordinal: 12,
     visible: true
+  },
+  {
+    name: 'SEO, Marketing',
+    width: 87,
+    ordinal: 12,
+    visible: true
   }
 ])
