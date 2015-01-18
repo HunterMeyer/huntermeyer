@@ -92,7 +92,7 @@ Education.create([
 ])
 
 # Seed experience data
-Experiences.create([
+Experience.create([
   {
     company: 'Listen360',
     title: 'Software Engineer',
