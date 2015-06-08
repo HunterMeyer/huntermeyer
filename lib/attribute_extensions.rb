@@ -1,7 +1,7 @@
 module AttributeExtensions
 
   def dates
-    "#{start_date} -  #{end_date}"
+    "#{start_date} - #{end_date}"
   end
 
   def location
