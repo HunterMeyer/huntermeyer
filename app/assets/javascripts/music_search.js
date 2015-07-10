@@ -3,7 +3,7 @@ $(function() {
     var keywords = $(this).serialize();
     $("#tracks").empty();
 
-    $.ajax({url: "http://ws.spotify.com/search/1/track?" + keywords, headers: {"Accept": "application/json"}})
+    $.ajax({url: "https://ws.spotify.com/search/1/track?" + keywords, headers: {"Accept": "application/json"}})
       .done(function(responseBody) {
       responseBody.tracks.forEach(function(track) {
         var trackID = track.href.slice(14);
@@ -18,7 +18,7 @@ $(function() {
 
         $("ul#" + trackID).append("<li class='song link' value='" + track.href + "'>Play Song</li><ul class='hiding'></ul>");
 
-        $.get("http://gdata.youtube.com/feeds/api/videos?q=" + track.name + "%20" + track.artists[0].name + "&format=5&max-results=50&orderby=viewCount&v=2&alt=jsonc")
+        $.get("https://gdata.youtube.com/feeds/api/videos?q=" + track.name + "%20" + track.artists[0].name + "&format=5&max-results=50&orderby=viewCount&v=2&alt=jsonc")
         .done(function(results) {
           for (var index = 0; index < 50 && index < results.data.items.length; index++) {
             if(results.data.items[index].accessControl.syndicate === "allowed" && results.data.items[index].restrictions == null) {
@@ -35,7 +35,7 @@ $(function() {
             var songTitle = $(this).attr("value");
             $('.modal-title').empty().append(songTitle);
             $('#music-video').modal('show');
-            $('.modal-body').empty().append("<iframe width='420' height='315' src='http://www.youtube.com/v/" + video + "?version=3&f=videos&app=youtube_gdata' frameborder='0' allowfullscreen></iframe>");
+            $('.modal-body').empty().append("<iframe width='420' height='315' src='https://www.youtube.com/v/" + video + "?version=3&f=videos&app=youtube_gdata' frameborder='0' allowfullscreen></iframe>");
           });
         });
       });

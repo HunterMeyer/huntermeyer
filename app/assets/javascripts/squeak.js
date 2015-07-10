@@ -54,7 +54,7 @@ function changeVid(way) {
 }
 
 function changeSrc() {
-  var base_url = "http://gdata.youtube.com/feeds/api/videos?q=";
+  var base_url = "https://gdata.youtube.com/feeds/api/videos?q=";
   var search_input = document.getElementById("searchbox").value;
   var new_url = base_url + search_input + "&format=5&max-results=50&orderby=relevance&time=this_month&v=2&alt=jsonc&callback=showVideo";
   document.body.appendChild(document.createElement('script')).src = new_url;
