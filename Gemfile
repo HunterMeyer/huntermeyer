@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.2'
 
 gem 'rails', '4.0.2'
 gem 'pg'
@@ -11,10 +11,7 @@ gem 'activeresource'
 gem 'font-awesome-rails'
 gem 'awesome_print'
 gem 'ap'
-
-group :production do
-  gem 'rails_12factor'
-end
+gem 'puma'
 
 group :development do
   gem 'better_errors'
@@ -23,10 +20,7 @@ group :development do
   gem 'pry'
 end
 
-group :test, :development do
-  gem 'rspec-rails'
-end
-
 group :test do
+  gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
