@@ -8,12 +8,14 @@ class WeInsureController < ApplicationController
     doc = Nokogiri::HTML(open(url)); true
 
     people = doc.css('li.single-post'); true
-
+    agent_id = 0
     @list = people.map do |person|
+      agent_id += 1
       name_link = person.css('h2 a')
       url = name_link.attr('href').text
       {
         name: name_link.attr('title').text,
+        id: agent_id,
         url: url.split('/?').first,
         lat: /(?<=lat=)(.*?)(?=&)/.match(url).to_s,
         lng: /(?<=lng=)(.*?)(?=&)/.match(url).to_s,
