@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.2'
 
 gem 'rails', '4.0.2'
 gem 'pg'
@@ -11,6 +11,7 @@ gem 'activeresource'
 gem 'font-awesome-rails'
 gem 'awesome_print'
 gem 'ap'
+gem 'nokogiri'
 
 group :production do
   gem 'rails_12factor'
