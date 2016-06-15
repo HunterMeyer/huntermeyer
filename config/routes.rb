@@ -7,4 +7,5 @@ Huntermeyer::Application.routes.draw do
   match '/musicsearch', to: 'music_search#index', via: 'get'
   match '/piglatin',    to: 'pig_latin#index',    via: 'get'
   match '/squeak',      to: 'squeak#index',       via: 'get'
+  match '/we_insure',   to: 'we_insure#index',    via: 'get', defaults: { format: :js }
 end
