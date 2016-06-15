@@ -4,7 +4,7 @@ class WeInsureController < ApplicationController
   def index
     url = 'http://weinsuregroup.com/search/?gmw_address%5B0%5D='
     url += params[:zip]
-    url += '&gmw_post=post%20agents&gmw_distance=100&gmw_units=imperial&gmw_form=1&gmw_per_page=5&gmw_lat&gmw_lng&gmw_px=pt&action=gmw_post'
+    url += '&gmw_post=post%20agents&gmw_distance=50&gmw_units=imperial&gmw_form=1&gmw_per_page=20&gmw_lat&gmw_lng&gmw_px=pt&action=gmw_post'
     doc = Nokogiri::HTML(open(url)); true
 
     people = doc.css('li.single-post'); true
