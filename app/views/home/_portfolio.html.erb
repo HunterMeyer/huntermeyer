@@ -15,7 +15,7 @@
                     <p><%= w.caption %></p>
                   </div>
                 </div>
-                <div class='link-icon'><i class='fa fa-plus'></i></div>
+                <div class='link-icon'><%= fa_icon('plus') %></div>
               <% end %>
             </div>
           </div>
@@ -24,12 +24,10 @@
             <div class='description-box'>
               <h4><%= w.name %> | <%= w.position %></h4>
               <p><%= w.description %></p>
-              <span class='categories'><i class='fa fa-tags'></i><%= w.tags %></span>
+              <span class='categories'><%= fa_icon('tags') %><%= w.tags %></span>
             </div>
             <div class='link-box'>
-              <%= link_to w.url, target: '_blank' do %>
-                <i class='fa fa-external-link'></i> Open
-              <% end %>
+              <%= link_to fa_icon('external-link', text: 'Open'), w.url, target: '_blank' %>
               <a class='popup-modal-dismiss'>Close</a>
             </div>
           <% end %>

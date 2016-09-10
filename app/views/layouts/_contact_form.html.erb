@@ -1,7 +1,7 @@
 <section id='contact'>
   <div class='row section-head'>
     <div class='twelve columns'>
-      <div style='text-align: center; font-size: 80px; color: #fff;'><i class='fa fa-envelope'></i></div>
+      <div style='text-align: center; font-size: 80px; color: #fff;'><%= fa_icon('envelope') %></div>
       <p class='lead' style='text-align: center; margin: 10px 0 5px 0;'>
         Want to chat? Shoot me a message using the form below.
       </p>
@@ -21,15 +21,13 @@
             <%= f.text_area :content, row: '15', id: 'contactMessage', placeholder: 'Your message' %>
           </div>
           <div>
-            <%= button_tag type: 'submit', class: 'submit' do %>
-              <i class='fa fa-check'></i> Submit
-            <% end %>
+            <%= button_tag fa_icon('check', text: 'Submit'), type: 'submit', class: 'submit' %>
           </div>
         </fieldset>
       <% end %>
       <div id='message-warning'></div>
       <div id='message-success'>
-        <i class='fa fa-check'></i>Your message was sent, thank you!<br>
+        <%= fa_icon('check', text: 'Your message was sent, thank you!') %>
       </div>
     </div>
   </div>

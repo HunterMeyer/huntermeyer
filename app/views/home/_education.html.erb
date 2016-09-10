@@ -10,9 +10,7 @@
           <p class='info'>
             <%= link_to e.concentration, e.url, target: '_blank' %><span class='bull'>&bull;</span><em class='date'><%= e.dates %></em>
           </p>
-          <div class='info'>
-            <i class='fa fa-map-marker'></i> <em class='location'><%= e.location %></em>
-          </div>
+          <div class='info'><%= fa_icon('map-marker') %> <em class='location'><%= e.location %></em></div>
           <p><%= toggle_display_of(e.description) %></p>
           <%= content_tag(:ul, style: 'margin-top: -30px;') do %>
             <span style='font-weight: bold;'>Awards</span>:

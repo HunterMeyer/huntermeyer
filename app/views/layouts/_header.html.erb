@@ -16,12 +16,15 @@
     <div class='banner-text'>
       <h1 class='responsive-headline'>I'm Hunter Meyer.</h1>
       <h3>
-        I'm an Alpharetta, GA based <span>software engineer</span>, <span>co-founder</span>, <span>statistics enthusiast</span>,
-        <span>boyfriend</span>, and <span>aspiring guitar player</span>.
+        I'm a <span>software engineer</span>, <span>statistics enthusiast</span>, <span>simulation theory believer</span>,
+        and <span>terrible guitar player</span>.
+        I co-founded the <span class='underline'>
+        <%= external_link_to(url: 'https://www.jrdevjobs.com', text: 'largest job network for junior developers') %>
+        </span>, and I <span>build websites</span>.<br>
         I thrive on learning and challenging myself to go above and beyond,<br>
         <a class='smoothscroll' href='#about'>start scrolling</a> to learn more <a class='smoothscroll' href='#about'>about me</a>.
       </h3>
-      <hr />
+      <hr>
       <ul class='social'>
         <%= render 'layouts/social_media_links' %>
       </ul>
@@ -29,7 +32,6 @@
   </div>
 
   <p class='scrolldown'>
-    <a class='smoothscroll' href='#about'><i class='fa fa-chevron-down'></i></a>
+    <a class='smoothscroll' href='#about'><%= fa_icon('chevron-down') %></a>
   </p>
-
- </header>
+</header>
