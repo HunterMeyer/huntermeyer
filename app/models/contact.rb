@@ -5,6 +5,6 @@ class Contact < ActiveRecord::Base
   after_create { send_email }
 
   def send_email
-    UserMailer.new_contact(self.email, self.content).deliver
+    UserMailer.new_contact(self).deliver
   end
 end
