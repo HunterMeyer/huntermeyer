@@ -1,5 +1,4 @@
 class ContactsController < ApplicationController
-
   def create
     @contact = Contact.create(contact_params)
     if @contact.save

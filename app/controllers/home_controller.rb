@@ -1,5 +1,4 @@
 class HomeController < ApplicationController
-
   def index
     @contact     = Contact.new
     @works       = Work.all.order(:ordinal)
@@ -7,5 +6,4 @@ class HomeController < ApplicationController
     @educations  = Education.visible.order(:ordinal)
     @skills      = Skill.visible.order(:ordinal)
   end
-
 end
