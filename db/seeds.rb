@@ -1,32 +1,14 @@
 # Seed education data
 Education.create([
   {
-    school: 'Johns Hopkins University',
-    concentration: 'Data Science Specialization',
-    url: 'https://www.coursera.org/specialization/jhudatascience/1',
-    start_date: 'Feb 2014',
-    end_date: 'Present',
-    city: nil,
-    state: nil,
-    ordinal: 1,
-    visible: true,
-    highlights: nil,
-    description: 'Identify and classify data science problems, learn the principles of tidy data and data sharing, apply the tools for
-      data cleaning and manipulation, make visual representations of data using plotting systems in R, create rich analytic graphics from
-      different types of datasets, create visualizations of multidimensional data using exploratory multivariate statistical techniques,
-      perform inferential tasks in highly targeted settings, fit regression models, interpret coefficients, investigate residuals and
-      variability, apply multiple machine learning tools, build and evaluate predictors on real data, communicate using statistics and
-      statistical products.'
-  },
-  {
     school: 'University of Maryland, College Park',
     concentration: 'Cybersecurity Specialization',
     url: 'https://www.coursera.org/specialization/cybersecurity/7',
     start_date: 'Jan 2015',
-    end_date: 'Present',
+    end_date: 'June 2015',
     city: nil,
     state: nil,
-    ordinal: 2,
+    ordinal: 1,
     visible: true,
     highlights: nil,
     description: 'Design and build secure systems through principles of human-computer interaction and in-depth study of Usable Security
@@ -37,11 +19,29 @@ Education.create([
       attack, Trust Platform Modules, Physical Unclonable Functions, RFID).'
   },
   {
+    school: 'Johns Hopkins University',
+    concentration: 'Data Science Specialization',
+    url: 'https://www.coursera.org/specialization/jhudatascience/1',
+    start_date: 'Feb 2014',
+    end_date: 'Dec 2014',
+    city: nil,
+    state: nil,
+    ordinal: 2,
+    visible: true,
+    highlights: nil,
+    description: 'Identify and classify data science problems, learn the principles of tidy data and data sharing, apply the tools for
+      data cleaning and manipulation, make visual representations of data using plotting systems in R, create rich analytic graphics from
+      different types of datasets, create visualizations of multidimensional data using exploratory multivariate statistical techniques,
+      perform inferential tasks in highly targeted settings, fit regression models, interpret coefficients, investigate residuals and
+      variability, apply multiple machine learning tools, build and evaluate predictors on real data, communicate using statistics and
+      statistical products.'
+  },
+  {
     school: 'University of Texas, Austin',
     concentration: 'Foundations of Data Analysis',
     url: 'https://www.edx.org/course/foundations-data-analysis-utaustinx-ut-7-01x',
     start_date: 'Nov 2014',
-    end_date: 'Present',
+    end_date: 'Dec 2014',
     city: nil,
     state: nil,
     ordinal: 3,
@@ -58,7 +58,7 @@ Education.create([
     concentration: 'Web Development',
     url: 'http://www.epicodus.com',
     start_date: 'July 2014',
-    end_date: 'Present',
+    end_date: 'Nov 2014',
     city: 'Portland',
     state: 'OR',
     ordinal: 4,
@@ -76,7 +76,7 @@ Education.create([
     concentration: 'B.A. Interpersonal/Organizational Communication & Marketing',
     url: 'http://www.ucf.edu/',
     start_date: 'Aug 2010',
-    end_date: 'Present',
+    end_date: 'May 2012',
     city: 'Orlando',
     state: 'FL',
     ordinal: 4,
