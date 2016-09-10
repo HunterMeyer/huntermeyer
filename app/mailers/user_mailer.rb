@@ -3,8 +3,8 @@ class UserMailer < ActionMailer::Base
     @contact = contact
     mail(
       from:    'holla@huntermeyer.com',
-      to:      'huntermeyer@live.com',
-      subject: 'HunterMeyer.com | New Contact'
+      to:      'holla@huntermeyer.com',
+      subject: 'New Contact'
     )
   end
 end
