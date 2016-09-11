@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
 .hidden      { display: none; }
 .underline   { text-decoration: underline; }
 
-.toggle-content { font-size: 11px; }
+.toggle-content { font-size: 11px; margin-top: 10px; }
 .toggle-content > i { border-radius: 5px; border: solid 1px #DBDBDB; padding: 8px; }
 
 /* ------------------------------------------------------------------ */
