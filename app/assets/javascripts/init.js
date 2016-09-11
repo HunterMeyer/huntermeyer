@@ -139,7 +139,6 @@ sections.waypoint({
   $('.toggle-content').click(function() {
     $(this).prev().prev('.elipses').toggleClass('hidden');
     $(this).prev('.full-content').toggleClass('hidden', 400);
-    debugger;
     var state = $(this).children('.state');
     $(this).children('i').attr('class', (state.text() == ' Show More' ? 'fa fa-caret-up state' : 'fa fa-caret-down state'));
     state.text(state.text() == ' Show More' ? ' Show Less' : ' Show More');
