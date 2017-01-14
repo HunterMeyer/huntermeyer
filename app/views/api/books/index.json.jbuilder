@@ -1,4 +1,4 @@
 json.type :book
 json.results @books do |book|
-  json.(book, :title, :author, :genre, :subject, :summary, :url, :published_at, :ordinal)
+  json.(book, :title, :author, :genre, :subject, :summary, :url, :image_url, :ordinal)
 end
