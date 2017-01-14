@@ -11,10 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150117233455) do
+ActiveRecord::Schema.define(version: 20170114225140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "books", force: true do |t|
+    t.text     "title"
+    t.text     "author"
+    t.text     "genre"
+    t.text     "summary"
+    t.text     "reference"
+    t.text     "status",       default: "Active"
+    t.text     "url"
+    t.integer  "clicks",       default: 0
+    t.datetime "published_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "books", ["status"], name: "index_books_on_status", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "email"
