@@ -1,5 +1,5 @@
 module Api
-  class BooksController
+  class BooksController < ApiController
     def index
       @books = Book.active
     end
