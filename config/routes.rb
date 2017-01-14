@@ -1,5 +1,5 @@
 Huntermeyer::Application.routes.draw do
-  resources :contacts, defaults: { format: :js }
+  resources :contacts, only: [:create], defaults: { format: :js }
 
   namespace :api, defaults: { format: :json } do
     resources :books, only: [:index]
