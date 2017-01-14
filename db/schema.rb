@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20170114225140) do
     t.text     "reference"
     t.text     "status",       default: "Active"
     t.text     "url"
+    t.integer  "ordinal"
     t.integer  "clicks",       default: 0
     t.datetime "published_at"
     t.datetime "created_at"

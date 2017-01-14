@@ -8,6 +8,7 @@ class CreateBooks < ActiveRecord::Migration
       t.text :reference
       t.text :status, default: 'Active'
       t.text :url
+      t.integer :ordinal
       t.integer :clicks, default: 0
       t.datetime :published_at
       t.timestamps
