@@ -1,11 +1,15 @@
 Huntermeyer::Application.routes.draw do
   resources :contacts, defaults: { format: :js }
 
+  namespace :api, defaults: { format: :json } do
+    resources :books, only: [:index]
+  end
+
   root 'home#index'
 
-  match '/legislator',  to: 'legislator#index',   via: 'get'
-  match '/musicsearch', to: 'music_search#index', via: 'get'
-  match '/piglatin',    to: 'pig_latin#index',    via: 'get'
-  match '/squeak',      to: 'squeak#index',       via: 'get'
-  match '/we_insure',   to: 'we_insure#index',    via: 'get', defaults: { format: :js }
+  get '/legislator',  to: 'legislator#index'
+  get '/musicsearch', to: 'music_search#index'
+  get '/piglatin',    to: 'pig_latin#index'
+  get '/squeak',      to: 'squeak#index'
+  get '/we_insure',   to: 'we_insure#index', defaults: { format: :js }
 end
