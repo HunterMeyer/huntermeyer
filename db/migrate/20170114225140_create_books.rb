@@ -12,7 +12,6 @@ class CreateBooks < ActiveRecord::Migration
       t.text :image_url
       t.integer :ordinal
       t.integer :clicks, default: 0
-      t.datetime :published_at
       t.timestamps
     end
 

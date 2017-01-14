@@ -22,13 +22,12 @@ ActiveRecord::Schema.define(version: 20170114225140) do
     t.text     "genre"
     t.text     "subject"
     t.text     "summary"
-    t.text     "reference"
     t.text     "isbn"
-    t.text     "status",       default: "Active"
+    t.text     "status",     default: "Active"
     t.text     "url"
+    t.text     "image_url"
     t.integer  "ordinal"
-    t.integer  "clicks",       default: 0
-    t.datetime "published_at"
+    t.integer  "clicks",     default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
