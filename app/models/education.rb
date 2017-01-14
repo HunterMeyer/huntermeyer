@@ -1,4 +1,5 @@
 class Education < ActiveRecord::Base
-  include AttributeExtensions
+  include OrdinalHelper
+  include HistoryHelper
   scope :visible, -> { where(visible: true) }
 end
