@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hunter Meyer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <%= favicon_link_tag       'https://s3-us-west-2.amazonaws.com/huntermeyer/images/favicon.ico' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js' %>
+    <%= stylesheet_link_tag    'beta' %>
+    <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class='navbar-fixed'>
+      <nav class='main-header suppress-shadow'>
+        <div class='nav-wrapper container'>
+          <a href='#' class='brand-logo center'>
+            <%= image_tag s3_url('hunter-meyer-logo-sml.png'), alt: 'Hunter Meyer Logo', class: 'header-logo' %>
+          </a>
+          <ul id='nav-mobile' class='left'>
+            <li><a href='/books'>Reading List</a></li>
+          </ul>
+          <ul id='nav-mobile' class='right'>
+            <li><a href='/contacts/new'>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class='splash' style='height:360px;background:#38bbc7;'>
+      <div class='container'>
+        <div class='center-align'>
+          <%= image_tag s3_url('hunter-meyer-logo.png'), alt: 'Hunter Meyer Logo', class: 'splash-logo' %>
+          <div>I am Hunter Meyer. This is My Homepage</div>
+          <div class='welcome-msg'>
+            Welcome :)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style='height: 1000px;'>
+      body text
+    </div>
+    <%= yield %>
+  </body>
+</html>
+
+<style>
+.splash-logo,
+.header-logo,
+.welcome-msg        { transition: all 0.4s ease; }
+.header-logo        { width: 0; }
+.header-logo.sticky { width: 64px; margin-top: 5px; }
+.splash-logo        { width: 300px; }
+.splash-logo.sticky { width: 0; }
+.suppress-shadow    { box-shadow: none; }
+
+.welcome-msg        { font-size: 0; color: #fff; }
+.welcome-msg.sticky {
+  position: absolute;
+  top: 380px;
+  font-size: 16px;
+  width: 100%;
+  left: 0;
+}
+
+</style>
+
+<script>
+  splash_logo = $('.splash-logo');
+  header_logo = $('.header-logo');
+  nav_bar     = $('nav.main-header');
+  welcome_msg = $('.welcome-msg');
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 265) {
+      splash_logo.addClass('sticky');
+      header_logo.addClass('sticky');
+      welcome_msg.addClass('sticky');
+      nav_bar.removeClass('suppress-shadow');
+    }else{
+      splash_logo.removeClass('sticky');
+      header_logo.removeClass('sticky');
+      welcome_msg.removeClass('sticky');
+      nav_bar.addClass('suppress-shadow');
+    }
+  });
+</script>
