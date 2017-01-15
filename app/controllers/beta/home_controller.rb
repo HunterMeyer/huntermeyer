@@ -3,6 +3,7 @@ module Beta
     layout 'beta'
 
     def index
+      @books = Book.active.limit(8)
     end
   end
 end
