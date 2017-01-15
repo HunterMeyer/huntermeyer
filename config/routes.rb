@@ -1,6 +1,11 @@
 Huntermeyer::Application.routes.draw do
   resources :contacts, only: [:create], defaults: { format: :js }
 
+  namespace :beta do
+    get '/', to: 'home#index'
+
+  end
+
   namespace :api, defaults: { format: :json } do
     resources :books, only: [:index]
   end
