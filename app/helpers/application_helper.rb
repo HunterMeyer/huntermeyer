@@ -29,4 +29,8 @@ module ApplicationHelper
     return text unless name.present?
     fa_icon(name, text: text)
   end
+
+  def s3_url(file_name, bucket = :logos)
+    "https://s3-us-west-2.amazonaws.com/huntermeyer/images/#{bucket}/#{file_name}"
+  end
 end
