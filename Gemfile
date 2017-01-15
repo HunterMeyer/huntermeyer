@@ -5,12 +5,11 @@ gem 'rails', '4.0.2'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.2'
 gem 'uglifier'
-gem 'coffee-rails'
 gem 'jquery-rails'
+gem 'jbuilder'
 gem 'activeresource'
 gem 'font-awesome-rails'
 gem 'awesome_print'
-gem 'ap'
 gem 'nokogiri'
 
 group :production do

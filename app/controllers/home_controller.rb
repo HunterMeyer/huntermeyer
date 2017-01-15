@@ -5,5 +5,6 @@ class HomeController < ApplicationController
     @experiences = Experience.visible.order(:ordinal)
     @educations  = Education.visible.order(:ordinal)
     @skills      = Skill.visible.order(:ordinal)
+    @books       = Book.active.order(:ordinal)
   end
 end

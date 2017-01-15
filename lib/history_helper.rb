@@ -1,13 +1,6 @@
-module AttributeExtensions
+module HistoryHelper
   def self.included(base)
     base.include InstanceMethods
-    base.extend ClassMethods
-  end
-
-  module ClassMethods
-    def change_ordinals(direction = :increment)
-      all.each { |obj| obj.send("#{direction}!", :ordinal) }
-    end
   end
 
   module InstanceMethods
