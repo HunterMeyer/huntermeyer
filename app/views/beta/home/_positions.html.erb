@@ -1,0 +1,92 @@
+<div class='container'>
+  <div class='row no-b-mar'>
+    <div class='col s12'>
+      <h2 class='section-title center grey-section'>
+        <span class='pink-text text-lighten-4'>Where do I work?</span>
+      </h2>
+      <div class='row'>
+        <div class='col s12'>
+          <p class='center'>
+            Listen to the chatter at any social gathering and you're bound to hear
+            the endless reverberation of the common ice-breakers: "<strong>what do you do?</strong>",
+            "<strong>where do you work</strong>", and "<strong>if you were a tree what would you be and why?</strong>"
+            - okay, maybe not that last one.<br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col m6 s12'>
+      <div class='card horizontal'>
+        <div class='card-image'><%= image_tag 'https://s3-us-west-2.amazonaws.com/jrdevsimages/jr-dev-jobs-logo-full.png' %></div>
+        <div class='card-stacked'>
+          <div class='card-content'>
+            <span class='card-title pink-text'>Jr.DevJobs</span>
+            <br><span class='grey-text'>Co-Founder and CEO</span>
+          </div>
+          <div class='card-action right-align'>
+            <%= link_to 'https://www.jrdevjobs.com', class: 'waves-effect waves-light btn pink lighten-2' do %>
+              <%= icon('external-link', 'Website') %> 
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='col m6 s12'>
+      <div class='card horizontal'>
+        <div class='card-image'><%= image_tag 'http://www.mypmp.net/wp-content/uploads/2016/06/Listen360.jpg' %></div>
+        <div class='card-stacked'>
+          <div class='card-content'>
+            <span class='card-title pink-text'>Listen360</span>
+            <br><span class='grey-text'>Software Engineer</span>
+          </div>
+          <div class='card-action right-align'>
+            <%= link_to 'https://www.listen360.com', class: 'waves-effect waves-light btn pink lighten-2' do %>
+              <%= icon('external-link', 'Website') %> 
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='col m6 s12'>
+      <div class='card horizontal'>
+        <div class='card-image'><%= image_tag s3_url('whole-moose-logo.png') %></div>
+        <div class='card-stacked'>
+          <div class='card-content'>
+            <span class='card-title pink-text'>WholeMoose</span>
+            <br><span class='grey-text'>Founder and CEO</span>
+          </div>
+          <div class='card-action right-align'>
+            <%= link_to'#', class: 'waves-effect waves-light btn pink lighten-2' do %>
+              <%= icon('external-link', 'Website') %> 
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='col m6 s12'>
+      <div class='card horizontal'>
+        <div class='card-image'><%= image_tag 'https://index.tnwcdn.com/images/f8107d292b6ff643bf153b51c87a874adcdd9fea.png' %></div>
+        <div class='card-stacked'>
+          <div class='card-content'>
+            <span class='card-title pink-text'>MonthlyStash</span>
+            <br><span class='grey-text'>Founder and CEO</span>
+          </div>
+          <div class='card-action right-align'>
+            <%= link_to 'https://www.monthlystash.com', class: 'waves-effect waves-light btn pink lighten-2' do %>
+              <%= icon('external-link', 'Website') %> 
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card.horizontal .card-image img { padding: 10px; }
+</style>
+
+
+
