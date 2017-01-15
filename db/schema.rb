@@ -19,9 +19,7 @@ ActiveRecord::Schema.define(version: 20170114225140) do
   create_table "books", force: true do |t|
     t.text     "title"
     t.text     "author"
-    t.text     "genre"
     t.text     "subject"
-    t.text     "summary"
     t.text     "isbn"
     t.text     "status",     default: "Active"
     t.text     "url"
