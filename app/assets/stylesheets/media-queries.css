@@ -90,6 +90,7 @@
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
 
+   .book-item { flex-basis: 25%; }
 }
 
 /* mobile wide/smaller tablets
@@ -254,10 +255,13 @@
    #call-to-action .header-col h1:before { content: none; }
    #call-to-action p { font-size: 15px; }
 
+   /* Books Section
+   /* ----------------------------------------------------------------- */
+   .book-item { flex-basis: 50%; }
 
    /* Portfolio Section
    /* ----------------------------------------------------------------- */
-   #portfolio-wrapper .columns { margin-bottom: 40px; }
+   #portfolio-wrapper .columns, { margin-bottom: 40px; }
    .popup-modal { max-width: 85%; }
 
 
@@ -345,7 +349,6 @@
   -------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 480px) {
-
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap ul#nav { width: auto; float: none; }
