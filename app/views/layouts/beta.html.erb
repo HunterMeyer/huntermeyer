@@ -6,7 +6,7 @@
     <%= favicon_link_tag       'https://s3-us-west-2.amazonaws.com/huntermeyer/images/favicon.ico' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js' %>
-    <%= stylesheet_link_tag    'beta' %>
+    <%= stylesheet_link_tag    'beta', 'font-awesome' %>
     <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css' %>
     <%= csrf_meta_tags %>
   </head>
@@ -36,9 +36,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div style='height: 1000px;'>
-      body text
     </div>
     <%= yield %>
   </body>
