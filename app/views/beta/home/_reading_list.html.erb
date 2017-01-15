@@ -1,0 +1,31 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col s12'>
+      <div class='card-panel'>
+        <div class='row no-b-mar'>
+          <div class='col m6 s12'>
+            <p class='flow-text'>
+              Reading is great, right? Sometimes it's hard to find the right book though.<br>
+              Check out my reading list to see what I'm getting into.
+            </p>
+            <div class='right'>
+              <a class='waves-effect waves-light btn deep-purple lighten-2'>
+                <%= icon('book', 'View Library') %>
+              </a>
+            </div>
+          </div>
+          <div class='col m6 hide-on-small-and-down'>
+            <div style='display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap;'>
+              <% @books.each do |book| %>
+                <div style='flex-basis:25%;padding: 0 4px 4px 4px;'>
+                  <%= image_tag book.image_url, alt: book.title, class: 'z-depth-1', style: 'max-width: 100%;' %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
