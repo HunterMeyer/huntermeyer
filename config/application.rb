@@ -56,6 +56,7 @@ module Huntermeyer
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     # config.assets.precompile += %w(*.js squeak.css credit_card.css static_pages.css legislator.css)
     config.assets.precompile += %w(*.js *.css *.eot *.woff *.tff)
 
