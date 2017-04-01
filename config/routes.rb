@@ -12,4 +12,5 @@ Huntermeyer::Application.routes.draw do
   get '/piglatin',    to: 'pig_latin#index'
   get '/squeak',      to: 'squeak#index'
   get '/we_insure',   to: 'we_insure#index', defaults: { format: :js }
+  get '/sandbox',     to: 'sandbox#index'
 end
