@@ -57,7 +57,7 @@ module Huntermeyer
     # Enable the asset pipeline
     config.assets.enabled = true
     # config.assets.precompile += %w(*.js squeak.css credit_card.css static_pages.css legislator.css)
-    config.assets.precompile += %w(*.js *.css)
+    config.assets.precompile += %w(*.js *.css *.eot *.woff *.tff)
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
