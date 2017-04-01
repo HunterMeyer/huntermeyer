@@ -1,5 +1,317 @@
-<%= render 'navbar' %>
-<%= render 'mobile_navbar' %>
-<%= render 'splash' %>
-<%= render 'featured_jobs' %>
-<%= render 'featured_devs' %>
+<!-- BEGIN NAVBAR -->
+  <section class="section-header main-navbar">
+    <section class="container grid-960">
+      <nav class="navbar" style="height: 4rem;">
+        <section class="navbar-section">
+          <a href="#sidebar" class="btn btn-lg btn-link btn-action show-md"><i class="el el-lines"></i></a>
+          <a href="#" class="navbar-brand mr-10 brand-font"><span>Jr.</span>DevJobs</a>
+          <a href="#" class="btn btn-link hide-sm">All Jobs</a>
+          <a href="#" class="btn btn-link hide-sm">Post a Job</a>
+          <a href="#" class="btn btn-link hide-md">Insights</a>
+          <a href="#" class="btn btn-link hide-md">Companies</a>
+          <a href="#" class="btn btn-link hide-md">Articles</a>
+          <a href="#" class="btn btn-link hide-md">Slack</a>
+        </section>
+        <section class="navbar-section hide-sm">
+          <a href="#" class="btn btn-link">Sign Up</a>
+          <a href="#" class="btn btn-link">Sign In</a>
+        </section>
+      </nav>
+    </section>
+  </section>
+<!-- END NAVBAR -->
+
+<!-- BEGIN MOBILE SIDENAV -->
+  <section class="container grid-960 show-md">
+    <section class="columns">
+      <div id="sidebar" class="mobile-sidebar column col-3 col-sm-12">
+        <ul class="mobile-nav nav">
+          <li class="nav-item active">
+            <a href="#sidebar-close"><i class="el el-remove"></i></a>
+            <a href="#!" class="inline-block navbar-brand brand-font">Jr.DevJobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">All Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Post a Job</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Insights</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Companies</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Slack</a>
+          </li>
+          <li class="nav-item">
+            <div class="divider"></div>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a href="#!">Sign In</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#sidebar-close" id="sidebar-close" class="mobile-nav-clear"></a>
+    </section>
+  </section>
+<!-- END MOBILE SIDENAV -->
+
+<!-- BEGIN SPLASH -->
+  <section class="splash homepage" style="color:#fff; padding: 60px 0;">
+    <section class="container grid-960">
+      <div class="text-center">
+        <h2 class="brand-font">Find your First Developer Job</h2>
+        <h5>Jobs for Bootcamp Grads and Junior Level Programmers</h5>
+      </div>
+      <div class="columns">
+        <div class="column col-9 centered col-xs-12">
+          <div class="input-group">
+            <input type="text" class="form-input input-lg" auofocus="true" placeholder="Search Jobs by Title, Skills, City/State, Company...">
+            <button class="btn btn-primary input-group-btn btn-lg">
+              <i class="el el-search"></i> Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+<!-- END SPLASH -->
+
+<!-- BEGIN FEATURED JOBS -->
+  <section class="container grid-960">
+    <div class="divider text-center brand-font mt-25" data-content="Featured Jobs"></div>
+    <p class="text-center">
+      Jobs posted to Jr.DevJobs must meet certain criteria, such as requiring 1 or fewer years of experience.<br>
+      Certain jobs really stand out by offering an ideal opportunity for a junior developer.
+      These postings get a special feature below.
+    </p>
+    <div class="columns">
+      <div class="column col-6 col-sm-12">
+        <div class="card border-primary shadow hoverable">
+          <div class="card-header">
+            <div class="card-title mb-5"><a href="#">Ruby Developer Intern</a></div>
+            <div class="card-subtitle">
+              <span class="mr-10"><i class="el el-website"></i> Groundswell</span>
+              <span class="mr-10"><i class="el el-map-marker"></i> Jacksonville, FL</span>
+            </div>
+          </div>
+          <div class="card-body">
+            Groundswell is a project management and accounting system built for law firms. Our users become m...
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn">View</a>
+            <div class="dropdown">
+              <a href="#!" class="btn dropdown-toggle" tabindex="0">
+                <i class="el el-share-alt"></i>
+              </a>
+              <ul class="menu thin high">
+                <li class="menu-item" title="Twitter"><a href="#!"><i class="el el-twitter"></i></a></li>
+                <li class="menu-item" title="Facebook"><a href="#!"><i class="el el-facebook"></i></a></li>
+                <li class="menu-item" title="LinkedIn"><a href="#!"><i class="el el-linkedin"></i></a></li>
+                <li class="menu-item" title="Email"><a href="#!"><i class="el el-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="float-right card-subtitle mt-10" style="font-size: 1.1rem;">
+              <i class="el el-calendar"></i> 3 Days Old
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="card border-primary shadow hoverable">
+          <div class="card-header">
+            <div class="card-title mb-5"><a href="#">Jr. Software Engineer</a></div>
+            <div class="card-subtitle">
+              <span class="mr-10"><i class="el el-website"></i> Fandango</span>
+              <span class="mr-10"><i class="el el-map-marker"></i> Santa Monica, CA</span>
+            </div>
+          </div>
+          <div class="card-body">
+            Do you love movies? Do you love to code? Then combine these two passions into a great career buil...
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn">View</a>
+            <div class="dropdown">
+              <a href="#!" class="btn dropdown-toggle" tabindex="0">
+                <i class="el el-share-alt"></i>
+              </a>
+              <ul class="menu thin high">
+                <li class="menu-item" title="Twitter"><a href="#!"><i class="el el-twitter"></i></a></li>
+                <li class="menu-item" title="Facebook"><a href="#!"><i class="el el-facebook"></i></a></li>
+                <li class="menu-item" title="LinkedIn"><a href="#!"><i class="el el-linkedin"></i></a></li>
+                <li class="menu-item" title="Email"><a href="#!"><i class="el el-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="float-right card-subtitle mt-10" style="font-size: 1.1rem;">
+              <i class="el el-calendar"></i> 3 Days Old
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="card border-primary shadow hoverable">
+          <div class="card-header">
+            <div class="card-title mb-5"><a href="#">Entry Level QA Engineer</a></div>
+            <div class="card-subtitle">
+              <span class="mr-10"><i class="el el-website"></i> Lone Wolf Real Estate Technologies</span>
+              <span class="mr-10"><i class="el el-map-marker"></i> Dallas, TX</span>
+            </div>
+          </div>
+          <div class="card-body">
+            The Associate QA Engineer will be responsible for owning and executing all test plans for Lone Wo...
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn">View</a>
+            <div class="dropdown">
+              <a href="#!" class="btn dropdown-toggle" tabindex="0">
+                <i class="el el-share-alt"></i>
+              </a>
+              <ul class="menu thin high">
+                <li class="menu-item" title="Twitter"><a href="#!"><i class="el el-twitter"></i></a></li>
+                <li class="menu-item" title="Facebook"><a href="#!"><i class="el el-facebook"></i></a></li>
+                <li class="menu-item" title="LinkedIn"><a href="#!"><i class="el el-linkedin"></i></a></li>
+                <li class="menu-item" title="Email"><a href="#!"><i class="el el-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="float-right card-subtitle mt-10" style="font-size: 1.1rem;">
+              <i class="el el-calendar"></i> 3 Days Old
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="card border-primary shadow hoverable">
+          <div class="card-header">
+            <div class="card-title mb-5"><a href="#">Entry Level Computer Support</a></div>
+            <div class="card-subtitle">
+              <span class="mr-10"><i class="el el-website"></i> Sacramento Medical Group</span>
+              <span class="mr-10"><i class="el el-map-marker"></i> Sacramento, CA</span>
+            </div>
+          </div>
+          <div class="card-body">
+            Computer networks are critical parts of almost every organization. Network and computer systems a...
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn">View</a>
+            <div class="dropdown">
+              <a href="#!" class="btn dropdown-toggle" tabindex="0">
+                <i class="el el-share-alt"></i>
+              </a>
+              <ul class="menu thin high">
+                <li class="menu-item" title="Twitter"><a href="#!"><i class="el el-twitter"></i></a></li>
+                <li class="menu-item" title="Facebook"><a href="#!"><i class="el el-facebook"></i></a></li>
+                <li class="menu-item" title="LinkedIn"><a href="#!"><i class="el el-linkedin"></i></a></li>
+                <li class="menu-item" title="Email"><a href="#!"><i class="el el-envelope"></i></a></li>
+              </ul>
+            </div>
+            <div class="float-right card-subtitle mt-10" style="font-size: 1.1rem;">
+              <i class="el el-calendar"></i> 3 Days Old
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-20 mb-20">
+      <a href="#" class="btn btn-primary"><i class="el el-play-alt"></i> All Jobs</a>
+    </div>
+  </section>
+<!-- END FEATURED JOBS -->
+
+<!-- BEGIN FEATURED PROFILES -->
+  <section class="container grid-960">
+    <div class="divider text-center brand-font mt-25" data-content="Featured Developers"></div>
+    <p class="text-center">
+      Check out the profiles of some of our top junior developers... These job seekers are truly exceptional!
+    </p>
+    <div class="columns">
+      <div class="column col-6 col-sm-12">
+        <div class="panel border-primary shadow hoverable ease svg-circuit-boards">
+          <a href="#!">
+            <div class="panel-header text-center">
+              <figure class="avatar avatar-xxl">
+                <img src="https://s3-us-west-2.amazonaws.com/jrdevsresumes/avatars/1474411562f71e9c5d/me.jpg?1474412630">
+              </figure>
+              <div class="panel-title mt-10">
+                <span class="bg-white pt-10 pb-5 pr-10 pl-10" href="#!">Micharl Irby</span>
+              </div>
+              <div class="panel-subtitle">
+                <span class="bg-white pt-5 pb-10 pr-10 pl-10">
+                  JavaScript, HTML, CSS
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="panel border-primary shadow hoverable ease svg-circuit-boards">
+          <a href="#!">
+            <div class="panel-header text-center">
+              <figure class="avatar avatar-xxl">
+                <img src="https://s3-us-west-2.amazonaws.com/jrdevsresumes/avatars/1486302251906237f1/FullSizeRender_(2).jpg?1486305026">
+              </figure>
+              <div class="panel-title mt-10">
+                <span class="bg-white pt-10 pb-5 pr-10 pl-10" href="#!">Chantelle Becker</span>
+              </div>
+              <div class="panel-subtitle">
+                <span class="bg-white pt-5 pb-10 pr-10 pl-10">
+                  PHP, Ruby, CSS
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="panel border-primary shadow hoverable ease svg-circuit-boards">
+          <a href="#!">
+            <div class="panel-header text-center">
+              <figure class="avatar avatar-xxl">
+                <img src="https://s3-us-west-2.amazonaws.com/jrdevsresumes/avatars/143872688919e10994/83aae181-3a78-4a1e-b6a7-484b23f3c746.jpg?1450668289">
+              </figure>
+              <div class="panel-title mt-10">
+                <span class="bg-white pt-10 pb-5 pr-10 pl-10" href="#!">Ellen Sun</span>
+              </div>
+              <div class="panel-subtitle">
+                <span class="bg-white pt-5 pb-10 pr-10 pl-10">
+                  CoffeeScript, PHP, CSS
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="column col-6 col-sm-12">
+        <div class="panel border-primary shadow hoverable ease svg-circuit-boards">
+          <a href="#!">
+            <div class="panel-header text-center">
+              <figure class="avatar avatar-xxl">
+                <img src="https://s3-us-west-2.amazonaws.com/jrdevsresumes/avatars/1485196294206d224a/marc_immediato_profile.jpg?1485210629">
+              </figure>
+              <div class="panel-title mt-10">
+                <span class="bg-white pt-10 pb-5 pr-10 pl-10" href="#!">Marc Immediato</span>
+              </div>
+              <div class="panel-subtitle">
+                <span class="bg-white pt-5 pb-10 pr-10 pl-10">
+                  React, Redux, jQuery
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-20 mb-20">
+      <p class="text-grey">Become a Featured Developer and Let Employers Find You!</p>
+      <a href="#" class="btn btn-primary"><i class="el el-play-alt"></i> Create a Profile</a>
+    </div>
+  </section>
+<!-- END FEATURED PROFILES -->
