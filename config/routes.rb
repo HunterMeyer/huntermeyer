@@ -7,10 +7,9 @@ Huntermeyer::Application.routes.draw do
 
   root 'home#index'
 
-  get '/legislator',  to: 'legislator#index'
-  get '/musicsearch', to: 'music_search#index'
-  get '/piglatin',    to: 'pig_latin#index'
-  get '/squeak',      to: 'squeak#index'
-  get '/we_insure',   to: 'we_insure#index', defaults: { format: :js }
-  get '/sandbox',     to: 'sandbox#index'
+  get :legislator,  to: 'legislator#index'
+  get :musicsearch, to: 'music_search#index'
+  get :piglatin,    to: 'pig_latin#index'
+  get :squeak,      to: 'squeak#index'
+  get :we_insure,   to: 'we_insure#index', defaults: { format: :js }
 end
