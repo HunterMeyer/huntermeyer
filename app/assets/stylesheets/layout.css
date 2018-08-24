@@ -341,7 +341,7 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
-.book-item { flex: 0 0 25%; }
+.book-item { flex: 0 0 20%; }
 
 #portfolio, #books {
   background: #ebeeee;

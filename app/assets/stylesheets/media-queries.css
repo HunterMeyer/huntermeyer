@@ -90,7 +90,7 @@
    #contact .section-head p.lead { font: 17px/33px opensans-light, sans-serif; }
 
 
-   .book-item { flex-basis: 25%; }
+   .book-item { flex-basis: 33%; }
 }
 
 /* mobile wide/smaller tablets
@@ -257,7 +257,7 @@
 
    /* Books Section
    /* ----------------------------------------------------------------- */
-   .book-item { flex-basis: 50%; }
+   /*.book-item { flex-basis: 50%; }*/
 
    /* Portfolio Section
    /* ----------------------------------------------------------------- */
