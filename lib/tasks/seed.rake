@@ -139,7 +139,7 @@ def books
 end
 
 def s3_url(file_name)
-  'https://s3-us-west-2.amazonaws.com/huntermeyer/images/books/' + file_name
+  'https://huntermeyer.s3-us-west-2.amazonaws.com/images/books/' + file_name
 end
 
 namespace :seed do
