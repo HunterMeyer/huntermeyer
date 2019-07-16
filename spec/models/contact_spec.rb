@@ -1,11 +1,27 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Contact do
-  it { should validate_presence_of :email }
-  it { should validate_presence_of :content }
+  context 'validations' do
+    it { is_expected.to validate_presence_of(:email) }
+    it { is_expected.to validate_presence_of(:content) }
 
-  it 'should not allow invalid emails addresses' do
-    c = Contact.create(email: 'huntermeyer.com', content: 'test')
-    c.should_not be_valid
+    describe 'email' do
+      let(:contact) { described_class.new(email: 'bademail.com', content: 'test') }
+
+      it 'does not allow invalid emails addresses' do
+        expect(contact).to_not be_valid
+        expect(contact.errors[:email]).to eq ['is invalid']
+      end
+    end
+  end
+
+  context 'before_save' do
+    describe 'email' do
+      let(:contact) { described_class.create(email: 'EMAIL@EXAMPLE.com', content: 'test') }
+
+      it 'downcases the email' do
+        expect(contact.email).to eq 'email@example.com'
+      end
+    end
   end
 end
