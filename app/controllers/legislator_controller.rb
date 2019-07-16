@@ -3,6 +3,5 @@
 class LegislatorController < ApplicationController
   layout 'legislator'
 
-  def index
-  end
+  def index; end
 end

@@ -3,6 +3,5 @@
 class MusicSearchController < ApplicationController
   layout 'music_search'
 
-  def index
-  end
+  def index; end
 end

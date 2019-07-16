@@ -3,6 +3,5 @@
 class SqueakController < ApplicationController
   layout 'squeak'
 
-  def index
-  end
+  def index; end
 end
