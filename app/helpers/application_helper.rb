@@ -12,7 +12,7 @@ module ApplicationHelper
   end
 
   def toggle_display_of(content)
-    return content if content.size < 184 
+    return content if content.size < 184
     (content[0..184] +
     content_tag(:span, '...', class: 'elipses') +
     content_tag(:span, content[185..-1], class: 'hidden full-content') +
