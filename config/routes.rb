@@ -1,4 +1,4 @@
-Huntermeyer::Application.routes.draw do
+Rails.application.routes.draw do
   resources :contacts, only: [:create], defaults: { format: :js }
 
   namespace :api, defaults: { format: :json } do
