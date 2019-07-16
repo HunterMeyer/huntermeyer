@@ -1,4 +1,4 @@
-class Experience < ActiveRecord::Base
+class Experience < ApplicationRecord
   include OrdinalHelper
   include HistoryHelper
   scope :visible, -> { where(visible: true) }

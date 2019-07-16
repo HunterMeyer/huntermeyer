@@ -1,4 +1,4 @@
-class Skill < ActiveRecord::Base
+class Skill < ApplicationRecord
   scope :visible, -> { where(visible: true) }
 
   def css_class
