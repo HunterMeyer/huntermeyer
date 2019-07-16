@@ -5,6 +5,6 @@ class Contact < ApplicationRecord
   after_create { send_email }
 
   def send_email
-    UserMailer.new_contact(self).deliver
+    ContactMailer.new_contact(self).deliver
   end
 end
