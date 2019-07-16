@@ -1,4 +1,4 @@
-class AddVisibleToWorks < ActiveRecord::Migration
+class AddVisibleToWorks < ActiveRecord::Migration[5.2]
   def change
     add_column :works, :visible, :boolean, default: true
   end

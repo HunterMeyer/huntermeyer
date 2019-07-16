@@ -1,7 +1,7 @@
-class AddTimestampToContacts < ActiveRecord::Migration
+class AddTimestampToContacts < ActiveRecord::Migration[5.2]
   def change
     change_table :contacts do |t|
-      t.timestamps 
+      t.timestamps
     end
   end
 end
