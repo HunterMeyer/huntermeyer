@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module ApplicationHelper
   def generate_form_errors(errors)
     content_tag(:div, fa_icon('close', text: "That didn't work because:"), class: 'error-label') +

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module HistoryHelper
   def self.included(base)
     base.include InstanceMethods

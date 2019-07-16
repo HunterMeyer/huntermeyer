@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateExperiences < ActiveRecord::Migration[5.2]
   def change
     create_table :experiences do |t|
