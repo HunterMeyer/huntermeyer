@@ -1,32 +1,26 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '4.0.2'
-gem 'pg'
-gem 'sass-rails', '~> 4.0.2'
-gem 'uglifier'
-gem 'jquery-rails'
-gem 'jbuilder'
-gem 'activeresource'
-gem 'font-awesome-rails'
+ruby '2.6.3'
+
 gem 'awesome_print'
-gem 'nokogiri'
+gem 'jquery-rails'
+gem 'pg', '>= 0.18', '< 2.0'
+gem 'puma', '~> 3.11'
+gem 'rails', '~> 5.2.2'
+gem 'sass-rails', '~> 5.0'
+gem 'turbolinks', '~> 5'
+gem 'uglifier', '>= 1.3.0'
 
 group :production do
   gem 'rails_12factor'
 end
 
-group :development do
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'quiet_assets'
-  gem 'pry'
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :test, :development do
-  gem 'rspec-rails'
-end
-
-group :test do
-  gem 'shoulda-matchers'
+  gem 'pry'
 end
