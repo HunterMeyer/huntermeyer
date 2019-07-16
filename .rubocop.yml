@@ -2,5 +2,9 @@
 Documentation:
   Enabled: false
 
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
 Metrics/LineLength:
   Max: 100
+
