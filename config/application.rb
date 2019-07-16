@@ -39,17 +39,6 @@ module Huntermeyer
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
-    #### OLD
-    # Enable the asset pipeline
-    # config.assets.enabled = true
-    # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-    # config.assets.precompile += %w(*.js squeak.css credit_card.css static_pages.css legislator.css)
-    # config.assets.precompile += %w(*.js *.css *.eot *.woff *.tff)
-
-    # Version of your assets, change this if you want to expire all your assets
-    # config.assets.version = '1.0'
-    #### OLD
-
     config.action_controller.permit_all_parameters = true
   end
 end
