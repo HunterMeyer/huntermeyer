@@ -11,13 +11,10 @@
     <meta name='author'      content='Hunter Meyer'>
     <meta name='google-site-verification' content='eC3xmiuTUgncy7epcHitY6zxiKlMh83qlN3zhnSAJ6Y'>
     <%= favicon_link_tag    'https://huntermeyer.s3-us-west-2.amazonaws.com/images/favicon.ico' %>
-    <%= stylesheet_link_tag 'default' %>
-    <%= stylesheet_link_tag 'layout' %>
-    <%= stylesheet_link_tag 'magnific-popup' %>
-    <%= stylesheet_link_tag 'media-queries' %>
     <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700' %>
     <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'modernizr' %>
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
 
@@ -29,13 +26,6 @@
     <%= render 'layouts/contact_form' %>
 
     <%= render 'layouts/footer' %>
-
-    <%= javascript_include_tag 'jquery.flexslider' %>
-    <%= javascript_include_tag 'waypoints' %>
-    <%= javascript_include_tag 'jquery.fittext' %>
-    <%= javascript_include_tag 'magnific-popup' %>
-    <%= javascript_include_tag 'init' %>
-    <%= render 'google_analytics/main_site' %>
+    <%= render 'google_analytics/main_site' if Rails.env.production? %>
   </body>
-
 </html>
