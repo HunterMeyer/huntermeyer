@@ -1,31 +1,15 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class='no-js' lang='en'> <!--<![endif]-->
+<html>
   <head>
-    <title>Hunter Meyer</title>
-    <meta charset='utf-8'>
-    <meta name='viewport'    content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    <meta name='description' content='Homepage of Hunter Meyer. Software Engineer. Co-Founder. Student.'>
-    <meta name='keywords'    content='Hunter Meyer'>
-    <meta name='author'      content='Hunter Meyer'>
-    <meta name='google-site-verification' content='eC3xmiuTUgncy7epcHitY6zxiKlMh83qlN3zhnSAJ6Y'>
-    <%= favicon_link_tag    'https://huntermeyer.s3-us-west-2.amazonaws.com/images/favicon.ico' %>
-    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700' %>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-    <%= stylesheet_pack_tag 'application' %>
+    <title>HunterMeyer</title>
     <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
-
     <%= yield %>
-
-    <%= render 'layouts/contact_form' %>
-
-    <%= render 'layouts/footer' %>
-    <%= render 'google_analytics/main_site' if Rails.env.production? %>
   </body>
 </html>

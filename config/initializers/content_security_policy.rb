@@ -17,14 +17,15 @@
 #   # Specify URI for violation reports
 #   # policy.report_uri "/csp-violation-report-endpoint"
 # end
-if Rails.evn.development?
-  Rails.application.config.content_security_policy do |policy|
-    policy.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035'
-  end
-end
+# if Rails.env.development?
+#   Rails.application.config.content_security_policy do |policy|
+#     policy.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035'
+#   end
+# end
 
 # If you are using UJS then enable automatic nonce generation
-# Rails.application.config.content_security_policy_nonce_generator = -> request { SecureRandom.base64(16) }
+# rand = SecureRandom.base64(16)
+# Rails.application.config.content_security_policy_nonce_generator = -> request { rand }
 
 # Report CSP violations to a specified URI
 # For further information see the following documentation:

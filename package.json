@@ -1,4 +1,6 @@
 {
+  "name": "hunter_meyer",
+  "private": true,
   "dependencies": {
     "@rails/webpacker": "^4.0.7",
     "tailwindcss": "^1.0.5"

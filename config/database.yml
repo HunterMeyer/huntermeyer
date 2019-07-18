@@ -1,7 +1,12 @@
-development:
+default: &default
   adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
   database: huntermeyer_development
 
 test:
-  adapter: postgresql
+  <<: *default
   database: huntermeyer_test
