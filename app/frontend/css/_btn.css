@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-
 .btn {
   @apply inline-block px-5 py-3 rounded-lg text-sm uppercase tracking-wider font-semibold;
 }
@@ -32,6 +29,3 @@
 .btn.btn-muted:active {
   @apply bg-gray-500;
 }
-
-
-@tailwind utilities;
