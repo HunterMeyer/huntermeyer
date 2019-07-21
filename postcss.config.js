@@ -11,7 +11,10 @@ module.exports = {
       stage: 3
     }),
     require('@fullhuman/postcss-purgecss')({
-      content: ['./app/**/*.html.erb'],
+      content: [
+        './app/**/*.html.erb',
+        './public/*.html'
+      ],
       defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
     })
   ]
