@@ -1,4 +1,6 @@
-<div class="flex flex-col items-center h-screen bg-black">
+<%= render 'navbar' %>
+
+<section class="flex flex-col items-center h-screen bg-black" id="splash">
   <div class="flex flex-grow items-center">
     <div class="text-white text-center">
       <h1 class="mb-0 text-4xl md:text-6xl">I'm Hunter Meyer</h1>
@@ -16,10 +18,26 @@
   <div class="text-white mb-4">
     <span class="text-xl"><i class="fas fa-chevron-down"></i></span>
   </div>
-</div>
+</section>
 
 <%= render 'work' %>
 
 <%= render 'experience' %>
 
 <%= render 'education' %>
+
+<script>
+  const navbar = document.getElementById("navbar");
+  const navbarHeight = navbar.clientHeight;
+  const splashHeight = document.getElementById("splash").clientHeight;
+  const navbarVisibileAt = splashHeight - navbarHeight;
+  navbar.style.visibility = "hidden";
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= navbarVisibileAt) {
+      navbar.style.visibility = "visible";
+    } else {
+      navbar.style.visibility = "hidden";
+    }
+  });
+</script>
+
