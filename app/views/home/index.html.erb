@@ -1,6 +1,19 @@
-<div class="flex items-center h-screen bg-black">
-  <div class="flex-1 text-white text-center">
-    <h1 class="text-6xl">I'm Hunter Meyer</h1>
-    <h3 class="text-sm">husband &bull; software engineer &bull; learner</h3>
+<div class="flex flex-col items-center h-screen bg-black">
+  <div class="flex flex-grow items-center">
+    <div class="text-white text-center">
+      <h1 class="mb-0 text-4xl md:text-6xl">I'm Hunter Meyer</h1>
+      <h3 class="mb-10 text-md md:text-sm">husband &bull; software engineer &bull; learner</h3>
+      <span class="border-t border-gray-800 pt-6 px-5">
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/32Kl1UT', title: 'Twitter',        icon: 'fab fa-twitter') %></h6>
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/2YhjbeU', title: 'GitHub',         icon: 'fab fa-github') %></h6>
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/2YggH0m', title: 'Stack Overflow', icon: 'fab fa-stack-overflow') %></h6>
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/2JYiL3O', title: 'Hacker News',    icon: 'fab fa-hacker-news') %></h6>
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/2LBrNa7', title: 'SoundCloud',     icon: 'fab fa-soundcloud') %></h6>
+        <h6 class="text-xl inline-block mx-3"><%= external_link_to(url: 'https://bit.ly/32RNKr8', title: 'LinkedIn',       icon: 'fab fa-linkedin') %></h6>
+      </span>
+    </div>
+  </div>
+  <div class="text-white mb-4">
+    <span class="text-xl"><i class="fas fa-chevron-down"></i></span>
   </div>
 </div>
