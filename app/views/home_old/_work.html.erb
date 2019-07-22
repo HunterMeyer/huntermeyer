@@ -4,7 +4,7 @@
     <div class="text-gray-600">A selection of some of the stuff we've done</div>
 
     <div class="flex flex-wrap -mx-4">
-      <% @work.each do |work| %>
+      <% Work.visible.order(:ordinal).each do |work| %>
         <div class="mt-6 w-full px-4 lg:w-1/2 xl:w-1/3">
           <%= link_to '#', class: 'flex items-center rounded-lg bg-white shadow-lg hover:shadow-xl overflow-hidden' do %>
             <%= image_tag work.image_url, class: 'h-32 w-32 object-center object-cover flex-shrink-0', title: work.name %>
