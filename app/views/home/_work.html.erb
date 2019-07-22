@@ -1,0 +1,22 @@
+<div class="flex bg-gray-100">
+  <section class="w-full max-w-lg md:max-w-4xl mx-auto p-8">
+    <div class="text-xl text-gray-900">My Work</div>
+    <div class="text-gray-600">A selection of some of the apps I've built</div>
+
+    <div class="flex flex-wrap -mx-1 md:-mx-3 md:-mt-3">
+      <% Work.visible.order(:ordinal).limit(6).each do |work| %>
+        <div class="mt-4 md:mt-6 md:px-2 px-1 w-full md:w-1/3">
+          <%= link_to '#', class: 'flex rounded-lg bg-white shadow-lg hover:shadow-xl overflow-hidden' do %>
+            <div class="xl:max-w-lg xl:ml-auto">
+              <%= image_tag work.image_url, class: 'h-64 w-full object-cover object-top', title: work.name %>
+              <div class="px-6 py-4 self-start">
+                <h3 class="text-md font-semibold text-gray-800"><%= work.name %></h3>
+                <p class="text-sm text-gray-600"><%= work.caption %></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</div>
