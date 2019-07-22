@@ -7,8 +7,5 @@
     "@rails/webpacker": "^4.0.7",
     "tailwindcss": "^1.0.5",
     "webpack-dev-server": "^3.7.2"
-  },
-  "scripts": {
-    "heroku-postbuild": "webpack --config webpack.prod.js"
   }
 }
