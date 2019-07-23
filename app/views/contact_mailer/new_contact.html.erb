@@ -1,0 +1,16 @@
+<div style="margin-bottom:10px;">
+  HunterMeyer.com has received a new contact submission.
+</div>
+
+<div style="margin-bottom:5px;">
+  <b>From</b>: <%= @contact.name %> (<%= @contact.email %>)
+</div>
+
+<div style="margin-bottom:5px;">
+  <b>When</b>: <%= @contact.created_at.strftime('%a %D at %R') %>
+</div>
+
+<div style="margin-bottom:5px;">
+  <b>Message</b>:<br>
+  <pre><%= @contact.content %></pre>
+</div>
