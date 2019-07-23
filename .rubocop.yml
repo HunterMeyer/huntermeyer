@@ -2,17 +2,12 @@
 AllCops:
   Exclude:
     - db/**/*
+    - bin/*
     - lib/tasks/seed.rake
     - node_modules/**/*
 
 Documentation:
   Enabled: false
-
-# Layout/AlignHash:
-  # Enabled: false
-
-# Layout/EmptyLineAfterGuardClause:
-  # Enabled: false
 
 Metrics/BlockLength:
   Exclude:
@@ -23,11 +18,11 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Max: 100
   Exclude:
-    # - config/initializers/content_security_policy.rb
     - config/initializers/secret_token.rb
 
-# Style/ExpandPathArguments:
-  # Enabled: false
+Style/ExpandPathArguments:
+  Enabled: false
 
-# Style/BlockComments:
-  # Enabled: false
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - config/boot.rb
