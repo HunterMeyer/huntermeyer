@@ -1,5 +1,5 @@
 .btn {
-  @apply inline-block px-5 py-3 rounded-lg text-sm uppercase tracking-wider font-semibold;
+  @apply inline-block px-5 py-3 rounded-lg text-sm tracking-wider font-semibold;
   &:disabled {
     @apply cursor-not-allowed;
   }
