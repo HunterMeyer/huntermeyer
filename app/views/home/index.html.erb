@@ -27,19 +27,3 @@
 <%= render 'education' %>
 
 <%= render 'contact' %>
-
-<script>
-  const navbar = document.getElementById("navbar");
-  const navbarHeight = navbar.clientHeight;
-  const splashHeight = document.getElementById("splash").clientHeight;
-  const navbarVisibileAt = splashHeight - navbarHeight;
-  navbar.style.visibility = "hidden";
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= navbarVisibileAt) {
-      navbar.style.visibility = "visible";
-    } else {
-      navbar.style.visibility = "hidden";
-    }
-  });
-</script>
-
