@@ -1,0 +1,25 @@
+.btn {
+  @apply inline-block px-5 py-3 rounded-lg text-sm uppercase tracking-wider font-semibold;
+  &:disabled {
+    @apply cursor-not-allowed;
+  }
+  &:focus {
+    @apply outline-none shadow-outline;
+  }
+}
+
+.btn.btn-primary {
+  @apply bg-indigo-500 text-white;
+  &:hover {
+    @apply bg-indigo-400;
+  }
+  &:active {
+    @apply bg-indigo-600;
+  }
+  &:focus {
+    @apply bg-indigo-700;
+  }
+  &:disabled {
+    @apply bg-indigo-300;
+  }
+}
