@@ -14,4 +14,8 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import 'jquery'
 import '../css/application.scss'
+require('./contact_form.js');
+require('./navbar.js');
+
