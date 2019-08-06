@@ -7,12 +7,26 @@ class ContactsController < ApplicationController
 
   def create
     @contact = Contact.create(contact_params)
-    if @contact.save
-      flash[:success] = 'Thanks. Your message has been sent'
-      redirect_to root_path
-    else
-      flash.now[:error] = 'Whoops. All fields are required'
-      render :new
+    success  = I18n.t('contact.success')
+    failure  = I18n.t('contact.failure')
+    respond_to do |format|
+      if @contact.save
+        format.html do
+          flash[:success] = success
+          redirect_to root_path
+        end
+        format.json do
+          render json: { success: true, message: success }
+        end
+      else
+        format.html do
+          flash.now[:error] = failure
+          render :new
+        end
+        format.json do
+          render json: { success: false, message: failure }
+        end
+      end
     end
   end
 
