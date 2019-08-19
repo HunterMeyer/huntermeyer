@@ -4,6 +4,7 @@ $(document).ready(function() {
     name: $('.js-contact-form #contact_name'),
     email: $('.js-contact-form #contact_email'),
     content: $('.js-contact-form #contact_content'),
+    honeyPot: $('.js-contact-form #contact_message'),
     button: $('.js-contact-form #contact_submit'),
     success: $('.js-contact-form #contact_success'),
     failure: $('.js-contact-form #contact_failure'),
@@ -11,7 +12,7 @@ $(document).ready(function() {
       return field.val().length > 0;
     },
     toggleSubmit: function() {
-      if (this.hasInput(this.name) && this.hasInput(this.email) && this.hasInput(this.content)) {
+      if (this.valid()) {
         this.button.attr('disabled', false);
       } else {
         this.button.attr('disabled', true);
@@ -24,6 +25,10 @@ $(document).ready(function() {
     onSuccess: function(message) {
       this.failure.hide();
       this.success.html(message).show();
+    },
+    valid: function() {
+      return this.hasInput(this.name) && this.hasInput(this.email) &&
+              this.hasInput(this.content) && !this.hasInput(this.honeyPot);
     }
   }
 
@@ -33,14 +38,16 @@ $(document).ready(function() {
 
   contact.form.submit(function(event) {
     event.preventDefault();
-    let data = contact.form.serialize();
-    $.post(contact.form[0].action, data, function(res) {
-      if (res.success === true) {
-        contact.onSuccess(res.message);
-      } else {
-        contact.onFailure(res.message);
-      }
-    }, 'json');
-    return false
+    if (contact.valid()) {
+      let data = contact.form.serialize();
+      $.post(contact.form[0].action, data, function(res) {
+        if (res.success === true) {
+          contact.onSuccess(res.message);
+        } else {
+          contact.onFailure(res.message);
+        }
+      }, 'json');
+      return false
+    }
   });
 });

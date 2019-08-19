@@ -2,7 +2,7 @@
 
 class Contact < ApplicationRecord
   validates :email, presence: true, format: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
-  validates :content, presence: true
+  validates :content, :name, presence: true
   after_create { send_email }
   before_save { email.downcase! }
 

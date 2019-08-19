@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 class ContactsController < ApplicationController
+  HONEY_POT_PARAM = :message
+  HONEY_POT_ID    = :contact_message
+
+  before_action :check_honey_pot, only: :create
+
   def new
     @contact = Contact.new
   end
@@ -34,5 +39,14 @@ class ContactsController < ApplicationController
 
   def contact_params
     params.require(:contact).permit(:content, :email, :name)
+  end
+
+  def check_honey_pot
+    return if params[HONEY_POT_PARAM].blank?
+    bad_bot_img = 'https://cdn.dribbble.com/users/1068771/screenshots/6407347/smart_ch_head_4x.jpg'
+    respond_to do |format|
+      format.html { redirect_to bad_bot_img }
+      format.json { render js: "window.location.href = '#{bad_bot_img}';" }
+    end
   end
 end
