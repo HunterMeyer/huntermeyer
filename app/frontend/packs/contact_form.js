@@ -4,8 +4,8 @@ $(document).ready(function() {
     name: $('.js-contact-form #contact_name'),
     email: $('.js-contact-form #contact_email'),
     content: $('.js-contact-form #contact_content'),
-    honeyPot: $('.js-contact-form #contact_message'),
     button: $('.js-contact-form #contact_submit'),
+    humanCheck: $('.js-contact-form #human_check'),
     success: $('.js-contact-form #contact_success'),
     failure: $('.js-contact-form #contact_failure'),
     hasInput: function(field) {
@@ -28,13 +28,14 @@ $(document).ready(function() {
     },
     valid: function() {
       return this.hasInput(this.name) && this.hasInput(this.email) &&
-              this.hasInput(this.content) && !this.hasInput(this.honeyPot);
+              this.hasInput(this.content) && !this.hasInput(this.humanCheck);
     }
   }
 
   contact.name.keyup(function() { contact.toggleSubmit(); });
   contact.email.keyup(function() { contact.toggleSubmit(); });
   contact.content.keyup(function() { contact.toggleSubmit(); });
+  contact.humanCheck.keyup(function() { contact.toggleSubmit(); });
 
   contact.form.submit(function(event) {
     event.preventDefault();
