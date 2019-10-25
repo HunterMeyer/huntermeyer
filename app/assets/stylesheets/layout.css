@@ -819,9 +819,17 @@ call-to-action .button {
   background: #0F0F0F;
   padding: 24px 24px;
   margin: 0 auto;
-  margin-bottom: 36px;
-  width: 75%;
+  margin-bottom: 24px;
+  margin-top: -24px;
 }
+
+@media only screen and (max-width: 767px) {
+  #message-warning, #message-success {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+}
+
 #message-warning { color: #D72828; }
 #message-success { color: #11ABB0; }
 

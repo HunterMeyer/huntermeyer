@@ -50,7 +50,20 @@ Huntermeyer::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.perform_deliveries    = true
+  config.action_mailer.perform_deliveries  = true
+  config.action_mailer.delivery_method     = :smtp
+  config.action_mailer.default_url_options = { host: 'huntermeyer.com' }
+  config.action_mailer.smtp_settings       = {
+    address:        ENV['HUNTER_EMAIL_URL'],
+    port:           465,
+    domain:         'huntermeyer.com',
+    user_name:      ENV['HUNTER_EMAIL_UN'],
+    password:       ENV['HUNTER_EMAIL_PW'],
+    authentication: 'login',
+    ssl:            true,
+    tls:            true,
+    enable_starttls_auto: true
+  }
 
   # Enable threaded mode
   # config.threadsafe!

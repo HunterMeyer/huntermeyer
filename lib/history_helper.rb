@@ -14,7 +14,7 @@ module HistoryHelper
     end
 
     def formatted_description
-      long_description.gsub(';', '.').gsub(/\n/, '')
+      long_description.to_s.gsub(';', '.').gsub(/\n/, '')
     end
   end
 end

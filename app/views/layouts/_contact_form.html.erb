@@ -12,23 +12,25 @@
       <%= form_for @contact, remote: true, html: { id: 'contactForm' } do |f| %>
         <fieldset>
           <div>
-            <%= f.text_field :name, id: 'contactName', size: '35', placeholder: 'Your name' %>
+            <%= f.text_field :name, id: 'contactName', size: '35', placeholder: 'Your name', required: true %>
           </div>
           <div>
-            <%= f.text_field :email, id: 'contactEmail', size: '35', placeholder: 'your@email.com' %>
+            <%= f.email_field :email, id: 'contactEmail', size: '35', placeholder: 'your@email.com', required: true %>
           </div>
           <div>
-            <%= f.text_area :content, row: '15', id: 'contactMessage', placeholder: 'Your message' %>
+            <%= f.text_area :content, row: '15', id: 'contactMessage', placeholder: 'Your message', required: true %>
+          </div>
+          <div>
+            <div id='message-warning'></div>
+            <div id='message-success'>
+              <%= fa_icon('check', text: 'Your message was sent, thank you!') %>
+            </div>
           </div>
           <div>
             <%= button_tag fa_icon('check', text: 'Submit'), type: 'submit', class: 'submit' %>
           </div>
         </fieldset>
       <% end %>
-      <div id='message-warning'></div>
-      <div id='message-success'>
-        <%= fa_icon('check', text: 'Your message was sent, thank you!') %>
-      </div>
     </div>
   </div>
 </section>
