@@ -27,7 +27,7 @@
               <span class='categories'><%= fa_icon('tags') %><%= w.tags %></span>
             </div>
             <div class='link-box'>
-              <%= link_to fa_icon('external-link', text: 'Open'), w.url, target: '_blank' %>
+              <% link_to fa_icon('external-link', text: 'Open'), w.url, target: '_blank' %>
               <a class='popup-modal-dismiss'>Close</a>
             </div>
           <% end %>
